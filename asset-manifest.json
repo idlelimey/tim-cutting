@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/tim-cutting/static/css/main.e823fbc3.chunk.css",
+    "main.js": "/tim-cutting/static/js/main.dfbf932b.chunk.js",
+    "main.js.map": "/tim-cutting/static/js/main.dfbf932b.chunk.js.map",
+    "runtime-main.js": "/tim-cutting/static/js/runtime-main.aebdd16a.js",
+    "runtime-main.js.map": "/tim-cutting/static/js/runtime-main.aebdd16a.js.map",
+    "static/js/2.c8f67b75.chunk.js": "/tim-cutting/static/js/2.c8f67b75.chunk.js",
+    "static/js/2.c8f67b75.chunk.js.map": "/tim-cutting/static/js/2.c8f67b75.chunk.js.map",
+    "static/js/3.a261d5ce.chunk.js": "/tim-cutting/static/js/3.a261d5ce.chunk.js",
+    "static/js/3.a261d5ce.chunk.js.map": "/tim-cutting/static/js/3.a261d5ce.chunk.js.map",
+    "index.html": "/tim-cutting/index.html",
+    "static/css/main.e823fbc3.chunk.css.map": "/tim-cutting/static/css/main.e823fbc3.chunk.css.map",
+    "static/js/2.c8f67b75.chunk.js.LICENSE.txt": "/tim-cutting/static/js/2.c8f67b75.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/tim-cutting/static/media/tim-cutting.5fb1295d.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.aebdd16a.js",
+    "static/js/2.c8f67b75.chunk.js",
+    "static/css/main.e823fbc3.chunk.css",
+    "static/js/main.dfbf932b.chunk.js"
+  ]
+}
