@@ -7,8 +7,21 @@ import Header from './Components/Header';
 import SingleJob from './Components/SingleJob';
 import Jobs from './Data/History.json';
 import Contact from './Components/Contact';
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
+import Tooltip from 'react-bootstrap/Tooltip';
 
 function App() {
+
+    const icons = [
+        {icon: 'html', text: 'HTML5'},
+        {icon: 'sass', text: 'SASS/SCSS'},
+        {icon: 'javascript', text: 'JavaScript'},
+        {icon: 'booststrap', text: 'Bootstrap'},
+        {icon: 'wordpress', text: 'Wordpress'},
+        {icon: 'react', text: 'React'},
+        {icon: 'github', text: 'Git/GitHub'},
+        {icon: 'vscode', text: 'Visual Studio Code'}
+    ]
     return (
         <>
             <Header />
@@ -16,8 +29,8 @@ function App() {
                 <Row>
                     <Col>
                         <blockquote className='blockquote'>
-                            <p>I am an experienced and enthusiastic web developer with a number of essential and valuable digital skills from many years in development, design and marketing.</p>
-                            <p>I have a strong background in web development using standards-led JavaScript, SASS and PHP to produce high quality design &amp; data driven user experiences within many frameworks including Wordpress, React and native platforms.</p>
+                            <p>I am a seasoned and enthusiastic web developer with a number of essential and valuable digital skills from many years in development, design and marketing.</p>
+                            <p>I have a strong background in commercial and boutique web development using standards-led JavaScript, SASS and PHP to produce high quality design &amp; data driven user experiences within many frameworks including Wordpress, React and native platforms.</p>
                         </blockquote>
                     </Col>
                 </Row>
@@ -63,6 +76,21 @@ function App() {
                             <li className='pb-3'>Microsoft Office Applications</li>
                         </ul>
                     </Col>
+                </Row>
+                <Row className='py-5 justify-content-between'>
+                    {icons.map((icon, i) => {
+                        return (
+                            <Col key={i} xs={6} sm={3} md={'auto'} className='text-center'>
+                                <OverlayTrigger
+                                    placement='top'
+                                    delay={{ show: 250, hide: 400 }}
+                                    overlay={<Tooltip>{icon.text}</Tooltip>}
+                                >
+                                    <i className={`icon-${icon.icon} size-3 text-muted`}></i>
+                                </OverlayTrigger>
+                            </Col>
+                        )
+                    })}
                 </Row>
             </Container>
 

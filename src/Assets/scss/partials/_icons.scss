@@ -33,11 +33,19 @@
 }
 
 $icons: (
-    gift  : '\0041',
-    mail  : '\0042',
-    phone : '\0043',
-    quote : '\0044',
-    tim   : '\0054'
+    booststrap  : '\0030',
+    github      : '\0031',
+    html        : '\0032',
+    react       : '\0033',
+    sass        : '\0034',
+    vscode      : '\0035',
+    wordpress   : '\0036',
+    javascript  : '\0037',
+    gift        : '\0041',
+    mail        : '\0042',
+    phone       : '\0043',
+    quote       : '\0044',
+    tim         : '\0054'
 );
 
 @each $name, $char in $icons {

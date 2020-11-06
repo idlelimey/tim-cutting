@@ -23,7 +23,7 @@ module.exports = {
         'jest'
     ],
     rules: {
-        'indent': ['error', 4, { "SwitchCase": 1 }],
+        'indent': ['error', 4, { 'SwitchCase': 1 }],
         'no-console': ['error', {'allow':['error', 'warn', 'info']}],
         'no-multiple-empty-lines': ['warn', {'max': 1}],
         'no-undef': 2,
