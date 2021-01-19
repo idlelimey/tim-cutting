@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/tim-cutting/static/css/main.cc9b5d58.chunk.css",
+    "main.css": "/tim-cutting/static/css/main.43571d30.chunk.css",
     "main.js": "/tim-cutting/static/js/main.790ac09a.chunk.js",
     "main.js.map": "/tim-cutting/static/js/main.790ac09a.chunk.js.map",
     "runtime-main.js": "/tim-cutting/static/js/runtime-main.8dbc5ec5.js",
@@ -8,7 +8,7 @@
     "static/js/2.0c074e75.chunk.js": "/tim-cutting/static/js/2.0c074e75.chunk.js",
     "static/js/2.0c074e75.chunk.js.map": "/tim-cutting/static/js/2.0c074e75.chunk.js.map",
     "index.html": "/tim-cutting/index.html",
-    "static/css/main.cc9b5d58.chunk.css.map": "/tim-cutting/static/css/main.cc9b5d58.chunk.css.map",
+    "static/css/main.43571d30.chunk.css.map": "/tim-cutting/static/css/main.43571d30.chunk.css.map",
     "static/js/2.0c074e75.chunk.js.LICENSE.txt": "/tim-cutting/static/js/2.0c074e75.chunk.js.LICENSE.txt",
     "static/media/404-bottom.c70bbec2.svg": "/tim-cutting/static/media/404-bottom.c70bbec2.svg",
     "static/media/404-top.dd9887e6.svg": "/tim-cutting/static/media/404-top.dd9887e6.svg",
@@ -17,7 +17,7 @@
   "entrypoints": [
     "static/js/runtime-main.8dbc5ec5.js",
     "static/js/2.0c074e75.chunk.js",
-    "static/css/main.cc9b5d58.chunk.css",
+    "static/css/main.43571d30.chunk.css",
     "static/js/main.790ac09a.chunk.js"
   ]
 }
