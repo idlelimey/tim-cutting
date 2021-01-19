@@ -1,0 +1,74 @@
+.dark-mode {
+    background-color: darken($darker, 5%);
+    color: $lighter;
+
+    .navbar-nav {
+        .nav-link {
+            color: $light;
+
+            &.active,
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+
+    .text-muted {
+        color: lighten($mid, 5%) !important;
+    }
+
+    hr {
+        border-top-color: $darker;
+    }
+
+    .form-control {
+        background-color: $darker;
+        border: 0;
+        color: $lighter;
+    }
+
+    .custom-switch {
+        .custom-control-input {
+            &:checked ~ .custom-control-label {
+                &::after {
+                    background-color: $darker;
+                }
+            }
+        }
+    }
+
+    .input-group-text {
+        color: $white;
+        background-color: darken($darker, 8%);
+        border: 0;
+    }
+
+    .popover-header {
+        background-color: darken($darker, 8%);
+        border: 0;
+
+        &::before {
+            border-color: transparent !important;
+        }
+    }
+
+    .popover-body {
+        background-color: darken($darker, 3%);
+        color: $lighter !important;
+    }
+
+    > .arrow::before {
+        border-bottom-color: darken($darker, 8%);
+    }
+
+    > .arrow::after {
+        border-bottom-color: darken($darker, 8%);
+    }
+
+    code {
+        background-color: darken($darker, 8%);
+        color: $danger;
+        padding: .25rem .5rem;
+        border-radius: $border-radius;
+    }
+}

@@ -1,0 +1,50 @@
+ul {
+    &.ticks {
+        list-style: none;
+        padding: 0;
+
+        li {
+            &::before {
+                @include icon-font;
+                content: 'J';
+                font-size: 133%;
+                color: $primary;
+                margin-right: .75rem;
+            }
+        }
+    }
+}
+
+// Hello
+#hello {
+    max-width: 10vh;
+    width: 100%;
+    height: auto;
+    fill: none;
+    stroke: $primary;
+    stroke-width: 17;
+    margin: 0 0 1rem 1rem;
+
+    path {
+        stroke-dasharray: 333;
+        stroke-dashoffset: 333;
+        
+        @for $i from 1 through 7 {	
+            &:nth-of-type(#{$i}) {
+                animation: draw 666ms #{$i * 333}ms forwards;
+            }
+        }
+    }
+}
+
+@keyframes draw {
+    50% {
+        stroke-dashoffset: 99;
+    }
+    66% {
+        stroke-dashoffset: 66;
+    }
+	100% {
+		stroke-dashoffset: 0;
+	}
+}

@@ -3,6 +3,7 @@
     src: url('../../font/tim-cutting.woff2');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 [class*="icon-"] {
@@ -16,11 +17,11 @@
     }
 
     &.size-2 {
-        font-size: $font-size-base * 2;
+        font-size: $font-size-base * 1.5;
     }
 
     &.size-3 {
-        font-size: $font-size-base * 3;
+        font-size: $font-size-base * 2;
     }
 
     &.size-4 {
@@ -30,9 +31,20 @@
     &.size-5 {
         font-size: $font-size-base * 5;
     }
+
+    &.size-10 {
+        font-size: $font-size-base * 10;
+    }
+
+    &.circle-primary {
+        background-image: radial-gradient(circle closest-side, $primary 0, $primary 97%, transparent 100%);
+    }
 }
 
 $icons: (
+    add         : '\002b',
+    minus       : '\002d',
+    shuffle     : '\0025',
     booststrap  : '\0030',
     github      : '\0031',
     html        : '\0032',
@@ -45,6 +57,16 @@ $icons: (
     mail        : '\0042',
     phone       : '\0043',
     quote       : '\0044',
+    sun         : '\0045',
+    moon        : '\0046',
+    pdf         : '\0047',
+    document    : '\0048',
+    info        : '\0049',
+    tick-circle : '\004a',
+    attention   : '\004b',
+    down-clock  : '\004c',
+    paint       : '\004d',
+    password    : '\004e',
     tim         : '\0054'
 );
 
@@ -52,4 +74,9 @@ $icons: (
     .icon-#{$name}::before {
         content: $char;
     }
+}
+
+.brand-logo {
+    height: 1.5rem;
+    margin: 1rem 0;
 }

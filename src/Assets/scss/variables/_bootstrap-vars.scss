@@ -1,31 +1,69 @@
 $white:    #fff;
-$gray-100: #f8f9fa;
-$gray-200: #e9ecef;
-$gray-300: #dee2e6;
-$gray-400: #ced4da;
-$gray-500: #adb5bd;
-$gray-600: #6c757d;
-$gray-700: #495057;
-$gray-800: #343a40;
-$gray-900: #212529;
-$black:    #000;
+$black:    #111;
 
-$primary:       #f2c925;
-$success:       #c3db94;
+$primary:       #ff6f61;
+$secondary:     #32B1B3;
+$success:       #20B361;
 $danger:        #a77c7c;
+
+$lighter:   #dfdfdf;
+$light:     #aaa;
+$mid:       #888;
+$dark:      #666;
+$darker:    #333;
+
+$theme-colors: ();
+$theme-colors: map-merge(
+  (
+    "primary":      $primary,
+    "secondary":    $secondary,
+    "success":      $success,
+    "danger":       $danger,
+    "light":        $light,
+    "lighter":      $lighter,
+    "mid":          $mid,
+    "dark":         $dark,
+    "darker":       $darker,
+  ),
+  $theme-colors
+);
 
 $form-feedback-valid-color:     $success;
 $form-feedback-invalid-color:   $danger;
+$input-bg:                      $white;
 
 
 
 $font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Raleway", "Segoe UI", "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 $headings-font-family:        -apple-system, BlinkMacSystemFont, "Oswald", "Segoe UI", "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-$line-height-base:            1.75;
+$line-height-base:            2;
 
-$body-color:                  #808285;
-$heading-color:               #58595b;
+$body-color:                  $darker;
+$heading-color:               $mid;
+$heading-color-dark-mode:     $lighter;
 $text-muted:                  lighten($body-color, 25%);
 
 $font-size-base:              1rem;
-$blockquote-font-size:        $font-size-base * 2;
+
+$blockquote-font-size:        $font-size-base * 2.25;
+
+$hr-border-color:             $lighter;
+$hr-margin-y:                 $font-size-base * 1.75;
+
+$btn-border-radius:           99px;
+$btn-border-radius-lg:        $btn-border-radius;
+$btn-border-radius-sm:        $btn-border-radius;
+$btn-font-weight:             bold;
+$btn-border-width:            .125rem;
+$input-btn-line-height:       1;
+
+$custom-control-indicator-border-color: $mid;
+
+$navbar-light-color:                $dark;
+$navbar-light-active-color:         $darker;
+$navbar-light-hover-color:          $black;
+
+$navbar-dark-toggler-border-color:  transparent;
+
+$code-font-size:                    87.5%;
+$code-color:                        $dark;

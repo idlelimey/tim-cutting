@@ -19,21 +19,21 @@ function Contact() {
     };
   
     return (
-        <Form noValidate validated={validated} onSubmit={handleSubmit}>
+        <Form noValidate validated={validated} onSubmit={handleSubmit} id='contact-form'>
             <Container>
                 <Row xs={1} md={2}>
                     <Col>
                         <Form.Group controlId="contactName">
                             <Form.Label>Your name</Form.Label>
-                            <Form.Control type="text" placeholder="Your name..." required />
+                            <Form.Control type="text" placeholder="Your name..." size="lg" required />
                         </Form.Group>
                         <Form.Group controlId="contactEmail">
                             <Form.Label>Email address</Form.Label>
-                            <Form.Control type="email" placeholder="Your email address..." required />
+                            <Form.Control type="email" placeholder="Your email address..." size="lg" required />
                         </Form.Group>
                         <Form.Group controlId="contactNumber">
                             <Form.Label>Telephone</Form.Label>
-                            <Form.Control type="text" placeholder="Your phone number..." />
+                            <Form.Control type="text" placeholder="Your phone number..." size="lg" />
                         </Form.Group>
                     </Col>
                     <Col>
@@ -45,7 +45,7 @@ function Contact() {
                 </Row>
                 <Row className='d-flex justify-content-center mt-4'>
                     <Col className='text-center' lg={3}>
-                        <Button type="submit" block>Submit form</Button>
+                        <Button type="submit" variant="outline-primary" size='lg' block>Submit form</Button>
                     </Col>
                 </Row>
             </Container>

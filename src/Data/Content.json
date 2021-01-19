@@ -1,4 +1,23 @@
-{
+{   
+    "blockquotes": {
+        "top": [
+            "I am a seasoned and enthusiastic web developer with a number of essential and valuable digital skills from many years in development, design and marketing.",
+            "I have a strong background in commercial and boutique web development using standards-led JavaScript, SASS and PHP to produce high quality design & data driven user experiences within many frameworks including Wordpress, React and native platforms."
+        ],
+        "bottom": [
+            "Years of experience and the skills necessary to produce modern front-end applications from conception and design through to development, testing and deployment."
+        ]
+    },
+    "icons": [
+        {"icon": "html", "text": "HTML5"},
+        {"icon": "sass", "text": "SASS/SCSS"},
+        {"icon": "javascript", "text": "JavaScript"},
+        {"icon": "booststrap", "text": "Bootstrap"},
+        {"icon": "wordpress", "text": "Wordpress"},
+        {"icon": "react", "text": "React"},
+        {"icon": "github", "text": "Git/GitHub"},
+        {"icon": "vscode", "text": "Visual Studio Code"}
+    ],
     "jobs": [
         {
             "order": 3,
