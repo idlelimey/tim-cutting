@@ -38,13 +38,13 @@ function App() {
                     <main>
                         <div className="content">
                             <Switch>
-                                <Route path="=/" exact component={Home} />
-                                <Route path="=/cv" component={CV} />
-                                <Route path="=/tools" exact component={Tools} />
-                                <Route path="=/tools/download-calculator" exact component={DownloadCalc} />
-                                <Route path="=/tools/contrast-ratio" exact component={Contrast} />
-                                <Route path="=/tools/password-entropy" exact component={PasswordEntropy} />
-                                <Route path="=/404" component={NotFound} />
+                                <Route path="/" exact component={Home} />
+                                <Route path="/cv" component={CV} />
+                                <Route path="/tools" exact component={Tools} />
+                                <Route path="/tools/download-calculator" exact component={DownloadCalc} />
+                                <Route path="/tools/contrast-ratio" exact component={Contrast} />
+                                <Route path="/tools/password-entropy" exact component={PasswordEntropy} />
+                                <Route path="/404" component={NotFound} />
                                 <Redirect to="/404" />
                             </Switch>
                         </div>
