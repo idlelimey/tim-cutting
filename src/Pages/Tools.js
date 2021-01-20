@@ -1,16 +1,18 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
+import ScrollToTop from '../Components/Common/ScrollToTop';
 
 function Tools(){
 
     return (
         <>
+            <ScrollToTop />
             <Container as="section">
                 <Row>
                     <Col>
                         <h1>Tools</h1>
-                        <p>Sometimes I need a tool to help me along with certain task during the day.  I built these and put them up here for others to use too.  How long is that new game going to take to download?  Am I meeting the WCAG requirements for colour contrast?  Is that  password any good?  Answers to these below.</p>
+                        <p>Sometimes I need a tool to help me along with certain tasks during the day.  I built these and put them up here for others to use too.  How long is that new game going to take to download?  Am I meeting the WCAG requirements for colour contrast?  Is that  password any good?  Answers to these below.</p>
                     </Col>
                 </Row>
             </Container>
@@ -18,7 +20,7 @@ function Tools(){
                 <Row xs={1} sm={2} md={3} lg={4}>
                     <Col>
                         <NavLink
-                            to="/tools/download-calculator"
+                            to="/tim-cutting/tools/download-calculator"
                             className="btn btn-outline-primary btn-block rounded mb-3 py-3"
                             style={{wordSpacing: '99vw'}}
                         >
@@ -28,7 +30,7 @@ function Tools(){
                     </Col>
                     <Col>
                         <NavLink
-                            to="/tools/contrast-ratio"
+                            to="/tim-cutting/tools/contrast-ratio"
                             className="btn btn-outline-primary btn-block rounded mb-3 py-3"
                             style={{wordSpacing: '99vw'}}
                         >
@@ -38,7 +40,7 @@ function Tools(){
                     </Col>
                     <Col>
                         <NavLink
-                            to="/tools/password-entropy"
+                            to="/tim-cutting/tools/password-entropy"
                             className="btn btn-outline-primary btn-block rounded mb-3 py-3"
                             style={{wordSpacing: '99vw'}}
                         >

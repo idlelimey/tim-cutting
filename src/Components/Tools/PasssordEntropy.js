@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useContext } from 'react';
 import { Col, Container, Row, Form, OverlayTrigger, Popover } from 'react-bootstrap';
 import { ThemeContext } from '../../App';
+import ScrollToTop from '../Common/ScrollToTop';
 import ToolsNav from './ToolsNavigation';
 
 function PasswordEntropy() {
@@ -73,11 +74,28 @@ function PasswordEntropy() {
 
     return (
         <>
+            <ScrollToTop />
             <ToolsNav />
             <Container as="section">
-                <Row xs={1} md={3}>
+                <Row xs={1} lg={3}>
                     <Col>
-                        <h2 className="mb-3">Character Set <small className="text-muted ml-2">{charSet}</small></h2>
+                        <h2 className="mb-3">
+                            <span className="d-flex align-items-center">
+                                 Character Set
+                                <small className="text-muted ml-2">{charSet}</small>
+                                <OverlayTrigger trigger="click" placement="bottom" overlay={
+                                    <Popover className={`shadow${Theme === 'dark' ? ' dark-mode' : ''}`}>
+                                        <Popover.Title as="h2" className="text-capitalize p-3">Character Set</Popover.Title>
+                                        <Popover.Content className="p-3">
+                                    Sometimes you will have rules imposed on you about which characters you can use.  Usually these are upper and lowercase letters, numbers and some symobls.  You can choose to limit the character set with these options to better reflect the strength of the password.
+                                        </Popover.Content>
+                                    </Popover>
+                                }>
+                                    <i className="icon-info text-primary size-2 cursor-pointer ml-auto"></i>           
+                                </OverlayTrigger>
+                            </span>
+                           
+                        </h2>
                         <div className="d-flex align-items-start mt-4">
                             <div>
                                 <Form.Group controlId="al-switch" className="m-0">
@@ -116,17 +134,6 @@ function PasswordEntropy() {
                                     />
                                 </Form.Group>
                             </div>
-                        
-                            <OverlayTrigger trigger="click" placement="bottom" overlay={
-                                <Popover className={`shadow${Theme === 'dark' ? ' dark-mode' : ''}`}>
-                                    <Popover.Title as="h2" className="text-capitalize p-3">Character Set</Popover.Title>
-                                    <Popover.Content className="p-3">
-                                    Sometimes you will have rules imposed on you about which characters you can use.  Usually these are upper and lowercase letters, numbers and some symobls.  You can choose to limit the character set with these options to better reflect the strength of the password.
-                                    </Popover.Content>
-                                </Popover>
-                            }>
-                                <i className="icon-info text-primary size-2 ml-auto mr-3 mt-3 cursor-pointer"></i>           
-                            </OverlayTrigger>
                         </div>
                      
                     </Col>

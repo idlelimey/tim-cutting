@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useContext } from 'react';
 import { Container, Row, Col, InputGroup, Form, FormControl, DropdownButton, Dropdown, OverlayTrigger, Popover } from 'react-bootstrap';
 import { ThemeContext } from '../../App';
+import ScrollToTop from '../Common/ScrollToTop';
 import ToolsNav from './ToolsNavigation';
 
 function DownloadCalc() {
@@ -96,9 +97,10 @@ function DownloadCalc() {
 
     return (
         <>
+            <ScrollToTop />
             <ToolsNav />
             <Container as="section">
-                <Row xs={1} md={3}>
+                <Row xs={1} lg={3}>
                     <Col>
                         <h2>File Size</h2>
                         <label htmlFor="filesize">{`Enter the filesize in ${fileSizeType}`}</label>

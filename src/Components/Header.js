@@ -15,7 +15,9 @@ function Header({theme, setTheme}) {
             <Navbar expand="lg" expanded={expandNav} sticky="top" className="p-0 shadow">
 
                 <Navbar.Brand className="p-0 px-3">
-                    <i className='icon-tim size-4 text-primary'></i>
+                    <NavLink to="/tim-cutting/" exact className="text-decoration-none">
+                        <i className='icon-tim size-4 text-primary'></i>
+                    </NavLink>
                 </Navbar.Brand>
                 <Navbar.Toggle
                     aria-controls="nav"
@@ -26,16 +28,16 @@ function Header({theme, setTheme}) {
                 </Navbar.Toggle>
                 <Navbar.Collapse id="nav">
                     <Nav className="mr-auto">
-                        <NavLink className="nav-link" activeClassName="active" to="/" exact>Home</NavLink>
-                        <NavLink className="nav-link" activeClassName="active" to="/cv">CV</NavLink>
-                        <NavLink className="nav-link" activeClassName="active" to="/tools">Tools</NavLink>
+                        <NavLink className="nav-link ml-4 my-2 m-lg-0" activeClassName="active" to="/tim-cutting/" exact>Home</NavLink>
+                        <NavLink className="nav-link ml-4 my-2 m-lg-0" activeClassName="active" to="/tim-cutting/cv">CV</NavLink>
+                        <NavLink className="nav-link ml-4 my-2 m-lg-0" activeClassName="active" to="/tim-cutting/tools">Tools</NavLink>
                     </Nav>
                     <Nav>
                         <Row noGutters className='align-items-center'>
-                            <Col className='text-right'>
+                            <Col className='text-right flex-grow-1'>
                                 <span className='icon-font size-2 pr-2 text-mid' id="theme-label">F</span>
                             </Col>
-                            <Col className='text-left'>
+                            <Col className='text-left flex-grow-0 mr-2'>
                                 <Form.Group controlId="theme-switch" className="m-0">
                                     <Form.Label className="sr-only">Theme</Form.Label>
                                     <Form.Switch 

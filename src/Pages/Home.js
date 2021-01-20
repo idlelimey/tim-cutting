@@ -1,8 +1,9 @@
 import React from 'react';
 import { Col, Container, Row, OverlayTrigger, Tooltip } from 'react-bootstrap';
-import BlockQuote from '../Components/BlockQuote';
+import BlockQuote from '../Components/Common/BlockQuote';
 import Content from '../Data/Content.json';
-import {Sony, TheSun, Sky, Telegraph, TypeCreative, Breakfree, BulkPowders} from '../Components/BrandLogos';
+import {Sony, TheSun, Sky, Telegraph, TypeCreative, Breakfree, BulkPowders} from '../Components/Common/BrandLogos';
+import ScrollToTop from '../Components/Common/ScrollToTop';
 
 function Home() {
     const heroButtons = [
@@ -14,7 +15,7 @@ function Home() {
         {
             icon: 'document',
             label: 'Read CV',
-            href: '/cv'
+            href: '/tim-cutting/cv'
         }
     ];
 
@@ -22,7 +23,7 @@ function Home() {
     
     return (
         <>
-
+            <ScrollToTop />
             <div className="d-flex flex-column align-items-center justify-content-center" style={{minHeight: 'calc(100vh - 76px)'}}>
                 <Container className="p-0">
                     <svg x="0px" y="0px" viewBox="0 0 318.8 247.4" xmlSpace="preserve" id="hello">
@@ -55,7 +56,7 @@ function Home() {
                     </Col>
                     <Col className="mb-5 mb-lg-0">
                         <h1 className="mb-3">Design<br /><span className="text-muted">Modern, Useful</span></h1>
-                        <p className="lead">Attractive and usable design incorporating best UX practices and browser compatibility.</p>
+                        <p className="lead">Attractive and usable design combining the best UX/UI and design practices with browser compatibility.</p>
                         <ul className="ticks">
                             <li>User Experience</li>
                             <li>Web &amp; Packaing Design</li>

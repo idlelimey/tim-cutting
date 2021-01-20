@@ -1,5 +1,7 @@
 import React, { useEffect, useState} from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
+import PlusMinus from '../Common/PlusMinus';
+import ScrollToTop from '../Common/ScrollToTop';
 import ToolsNav from './ToolsNavigation';
 
 function Contrast(){
@@ -79,13 +81,14 @@ function Contrast(){
 
     return (
         <>
+            <ScrollToTop />
             <ToolsNav />
             <Container as="section" className="contrast">
                 <Row xs={1} lg={3}>
                     <Col className="d-flex flex-column mb-5 mb-lg-0">
                         <h2 className="mb-5">
                             <span
-                                className='circle'
+                                className="circle"
                                 style={{background: 'rgb(' + FGR + ',' + FGG + ',' + FGB + ')'}}
                             ></span>
                             Foreground
@@ -108,21 +111,9 @@ function Contrast(){
                                 onChange={(e) => setFGR(parseInt(e.target.value, 10))}
                                 value={FGR}
                             />
-                            <button
-                                className="colour-adjust mx-2"
-                                disabled={FGR === 0}
-                                onClick={() => setFGR(prevState => prevState - 1)}
-                            >
-                                <i className="icon-minus size-2"></i>
-                            </button>
+                            <PlusMinus theState={FGR} theSetter={setFGR} icon="minus" theLabel="Decrease Red value" />
                             <span className="rgb-label">{FGR}</span>
-                            <button
-                                className="colour-adjust ml-2"
-                                disabled={FGR === 255}
-                                onClick={() => setFGR(prevState => prevState + 1)}
-                            >
-                                <i className="icon-add size-2"></i>
-                            </button>
+                            <PlusMinus theState={FGR} theSetter={setFGR} icon="add" theLabel="Increase Red value" />
                         </Form.Group>
                         <Form.Group controlId="fgg-range" className="d-flex align-items-center">
                             <Form.Label className="m-0 mr-3">G</Form.Label>
@@ -135,21 +126,9 @@ function Contrast(){
                                 onChange={(e) => setFGG(parseInt(e.target.value, 10))}
                                 value={FGG}
                             />
-                            <button
-                                className="colour-adjust mx-2"
-                                disabled={FGG === 0}
-                                onClick={() => setFGG(prevState => prevState - 1)}
-                            >
-                                <i className="icon-minus size-2"></i>
-                            </button>
+                            <PlusMinus theState={FGG} theSetter={setFGG} icon="minus" theLabel="Decrease Green value" />
                             <span className="rgb-label">{FGG}</span>
-                            <button
-                                className="colour-adjust ml-2"
-                                disabled={FGG === 255}
-                                onClick={() => setFGG(prevState => prevState + 1)}
-                            >
-                                <i className="icon-add size-2"></i>
-                            </button>
+                            <PlusMinus theState={FGG} theSetter={setFGG} icon="add" theLabel="Increase Green value" />
                         </Form.Group>
                         <Form.Group controlId="fgb-range" className="d-flex align-items-center">
                             <Form.Label className="m-0 mr-3">B</Form.Label>
@@ -162,21 +141,9 @@ function Contrast(){
                                 onChange={(e) => setFGB(parseInt(e.target.value, 10))}
                                 value={FGB}
                             />
-                            <button
-                                className="colour-adjust mx-2"
-                                disabled={FGB === 0}
-                                onClick={() => setFGB(prevState => prevState - 1)}
-                            >
-                                <i className="icon-minus size-2"></i>
-                            </button>
+                            <PlusMinus theState={FGB} theSetter={setFGB} icon="minus" theLabel="Decrease Blue value" />
                             <span className="rgb-label">{FGB}</span>
-                            <button
-                                className="colour-adjust ml-2"
-                                disabled={FGB === 255}
-                                onClick={() => setFGB(prevState => prevState + 1)}
-                            >
-                                <i className="icon-add size-2"></i>
-                            </button>
+                            <PlusMinus theState={FGB} theSetter={setFGB} icon="add" theLabel="Increase Blue value" />
                         </Form.Group>
                         <code className="d-block mt-5 mt-lg-auto">
                             HEX&nbsp;&nbsp;: {fgHex}<br />
@@ -211,21 +178,9 @@ function Contrast(){
                                 onChange={(e) => setBGR(parseInt(e.target.value, 10))}
                                 value={BGR}
                             />
-                            <button
-                                className="colour-adjust mx-2"
-                                disabled={BGR === 0}
-                                onClick={() => setBGR(prevState => prevState - 1)}
-                            >
-                                <i className="icon-minus size-2"></i>
-                            </button>
+                            <PlusMinus theState={BGR} theSetter={setBGR} icon="minus" theLabel="Decrease Red value" />
                             <span className="rgb-label">{BGR}</span>
-                            <button
-                                className="colour-adjust ml-2"
-                                disabled={BGR === 255}
-                                onClick={() => setBGR(prevState => prevState + 1)}
-                            >
-                                <i className="icon-add size-2"></i>
-                            </button>
+                            <PlusMinus theState={BGR} theSetter={setBGR} icon="add" theLabel="Increase Red value" />
                         </Form.Group>
                         <Form.Group controlId="bgg-range" className="d-flex align-items-center">
                             <Form.Label className="m-0 mr-3">G</Form.Label>
@@ -238,21 +193,9 @@ function Contrast(){
                                 onChange={(e) => setBGG(parseInt(e.target.value, 10))}
                                 value={BGG}
                             />
-                            <button
-                                className="colour-adjust mx-2"
-                                disabled={BGG === 0}
-                                onClick={() => setBGG(prevState => prevState - 1)}
-                            >
-                                <i className="icon-minus size-2"></i>
-                            </button>
+                            <PlusMinus theState={BGG} theSetter={setBGG} icon="minus" theLabel="Decrease Green value" />
                             <span className="rgb-label">{BGG}</span>
-                            <button
-                                className="colour-adjust ml-2"
-                                disabled={BGG === 255}
-                                onClick={() => setBGG(prevState => prevState + 1)}
-                            >
-                                <i className="icon-add size-2"></i>
-                            </button>
+                            <PlusMinus theState={BGG} theSetter={setBGG} icon="add" theLabel="Increase Green value" />
                         </Form.Group>
                         <Form.Group controlId="bgb-range" className="d-flex align-items-center">
                             <Form.Label className="m-0 mr-3">B</Form.Label>
@@ -265,21 +208,9 @@ function Contrast(){
                                 onChange={(e) => setBGB(parseInt(e.target.value, 10))}
                                 value={BGB}
                             />
-                            <button
-                                className="colour-adjust mx-2"
-                                disabled={BGB === 0}
-                                onClick={() => setBGB(prevState => prevState - 1)}
-                            >
-                                <i className="icon-minus size-2"></i>
-                            </button>
+                            <PlusMinus theState={BGB} theSetter={setBGB} icon="minus" theLabel="Decrease Blue value" />
                             <span className="rgb-label">{BGB}</span>
-                            <button
-                                className="colour-adjust ml-2"
-                                disabled={BGB === 255}
-                                onClick={() => setBGB(prevState => prevState + 1)}
-                            >
-                                <i className="icon-add size-2"></i>
-                            </button>
+                            <PlusMinus theState={BGB} theSetter={setBGB} icon="add" theLabel="Increase Blue value" />
                         </Form.Group>
                         <code className="d-block mt-5 mt-lg-auto">
                             HEX&nbsp;&nbsp;: {bgHex}<br />
