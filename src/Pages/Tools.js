@@ -20,7 +20,7 @@ function Tools(){
                 <Row xs={1} sm={2} md={3} lg={4}>
                     <Col>
                         <NavLink
-                            to="/tim-cutting/tools/download-calculator"
+                            to="/tools/download-calculator"
                             className="btn btn-outline-primary btn-block rounded mb-3 py-3"
                             style={{wordSpacing: '99vw'}}
                         >
@@ -30,7 +30,7 @@ function Tools(){
                     </Col>
                     <Col>
                         <NavLink
-                            to="/tim-cutting/tools/contrast-ratio"
+                            to="/tools/contrast-ratio"
                             className="btn btn-outline-primary btn-block rounded mb-3 py-3"
                             style={{wordSpacing: '99vw'}}
                         >
@@ -40,7 +40,7 @@ function Tools(){
                     </Col>
                     <Col>
                         <NavLink
-                            to="/tim-cutting/tools/password-entropy"
+                            to="/tools/password-entropy"
                             className="btn btn-outline-primary btn-block rounded mb-3 py-3"
                             style={{wordSpacing: '99vw'}}
                         >

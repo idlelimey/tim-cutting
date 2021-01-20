@@ -38,14 +38,14 @@ function App() {
                     <main>
                         <div className="content">
                             <Switch>
-                                <Route path="/tim-cutting/" exact component={Home} />
-                                <Route path="/tim-cutting/cv" component={CV} />
-                                <Route path="/tim-cutting/tools" exact component={Tools} />
-                                <Route path="/tim-cutting/tools/download-calculator" exact component={DownloadCalc} />
-                                <Route path="/tim-cutting/tools/contrast-ratio" exact component={Contrast} />
-                                <Route path="/tim-cutting/tools/password-entropy" exact component={PasswordEntropy} />
-                                <Route path="/tim-cutting/404" component={NotFound} />
-                                <Redirect to="/tim-cutting/404" />
+                                <Route path="=/" exact component={Home} />
+                                <Route path="=/cv" component={CV} />
+                                <Route path="=/tools" exact component={Tools} />
+                                <Route path="=/tools/download-calculator" exact component={DownloadCalc} />
+                                <Route path="=/tools/contrast-ratio" exact component={Contrast} />
+                                <Route path="=/tools/password-entropy" exact component={PasswordEntropy} />
+                                <Route path="=/404" component={NotFound} />
+                                <Redirect to="/404" />
                             </Switch>
                         </div>
                         <Footer />

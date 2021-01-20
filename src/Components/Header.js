@@ -15,7 +15,7 @@ function Header({theme, setTheme}) {
             <Navbar expand="lg" expanded={expandNav} sticky="top" className="p-0 shadow">
 
                 <Navbar.Brand className="p-0 px-3">
-                    <NavLink to="/tim-cutting/" exact className="text-decoration-none">
+                    <NavLink to="/" exact className="text-decoration-none">
                         <i className='icon-tim size-4 text-primary'></i>
                     </NavLink>
                 </Navbar.Brand>
@@ -28,9 +28,9 @@ function Header({theme, setTheme}) {
                 </Navbar.Toggle>
                 <Navbar.Collapse id="nav">
                     <Nav className="mr-auto">
-                        <NavLink className="nav-link ml-4 my-2 m-lg-0" activeClassName="active" to="/tim-cutting/" exact>Home</NavLink>
-                        <NavLink className="nav-link ml-4 my-2 m-lg-0" activeClassName="active" to="/tim-cutting/cv">CV</NavLink>
-                        <NavLink className="nav-link ml-4 my-2 m-lg-0" activeClassName="active" to="/tim-cutting/tools">Tools</NavLink>
+                        <NavLink className="nav-link ml-4 my-2 m-lg-0" activeClassName="active" to="/" exact>Home</NavLink>
+                        <NavLink className="nav-link ml-4 my-2 m-lg-0" activeClassName="active" to="/cv">CV</NavLink>
+                        <NavLink className="nav-link ml-4 my-2 m-lg-0" activeClassName="active" to="/tools">Tools</NavLink>
                     </Nav>
                     <Nav>
                         <Row noGutters className='align-items-center'>

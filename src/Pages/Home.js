@@ -15,7 +15,7 @@ function Home() {
         {
             icon: 'document',
             label: 'Read CV',
-            href: '/tim-cutting/cv'
+            href: '/cv'
         }
     ];
 
