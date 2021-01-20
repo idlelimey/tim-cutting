@@ -19,12 +19,18 @@
 @import './Assets/scss/Pages/Home';
 
 // Layout
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background-color: rgba($white, .8);
+    backdrop-filter: blur(.25rem);
+    -webkit-backdrop-filter: blur(.25rem);
+}
 .app {
-    display: flex;
-    flex-direction: column;
     min-height: 100vh;
-    max-height: 100vh; // Force scrollY to avoid screen jump on low content pages
-    overflow-y: hidden;
+    scroll-behavior: smooth;
 
     .content {
         display: flex;
@@ -36,8 +42,8 @@
         display: flex;
         flex-direction: column;
         flex: 1;
-        overflow-y: scroll;
         scroll-behavior: smooth;
+        min-height: calc(100vh - 76px);
 
         section {
             margin-top: 6rem;

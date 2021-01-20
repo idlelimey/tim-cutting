@@ -17,7 +17,7 @@ ul {
 
 // Hello
 #hello {
-    max-width: 10vh;
+    max-width: 22vh;
     width: 100%;
     height: auto;
     fill: none;
@@ -39,10 +39,10 @@ ul {
 
 @keyframes draw {
     50% {
-        stroke-dashoffset: 99;
+        stroke-dashoffset: 120;
     }
     66% {
-        stroke-dashoffset: 66;
+        stroke-dashoffset: 50;
     }
 	100% {
 		stroke-dashoffset: 0;

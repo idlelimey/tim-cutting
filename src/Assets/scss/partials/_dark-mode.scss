@@ -2,6 +2,10 @@
     background-color: darken($darker, 5%);
     color: $lighter;
 
+    .navbar {
+        background-color: rgba(darken($darker, 5%), .95);
+    }
+
     .navbar-nav {
         .nav-link {
             color: $light;

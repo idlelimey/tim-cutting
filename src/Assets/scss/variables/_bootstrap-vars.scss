@@ -1,7 +1,7 @@
 $white:    #fff;
 $black:    #111;
 
-$primary:       #ff6f61;
+$primary:       #e86559;
 $secondary:     #32B1B3;
 $success:       #20B361;
 $danger:        #a77c7c;
@@ -34,8 +34,8 @@ $input-bg:                      $white;
 
 
 
-$font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Raleway", "Segoe UI", "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-$headings-font-family:        -apple-system, BlinkMacSystemFont, "Oswald", "Segoe UI", "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-sans-serif:      "Raleway", "Segoe UI", "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$headings-font-family:        "Oswald", "Segoe UI", "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 $line-height-base:            2;
 
 $body-color:                  $darker;
@@ -62,7 +62,7 @@ $custom-control-indicator-border-color: $mid;
 $navbar-light-color:                $dark;
 $navbar-light-active-color:         $darker;
 $navbar-light-hover-color:          $black;
-
+$navbar-light-toggler-border-color: transparent;
 $navbar-dark-toggler-border-color:  transparent;
 
 $code-font-size:                    87.5%;
