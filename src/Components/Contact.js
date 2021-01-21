@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import emailjs from 'emailjs-com';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -8,38 +9,44 @@ import Button from 'react-bootstrap/Button'
 function Contact() {
     const [validated, setValidated] = useState(false);
 
-    const handleSubmit = (event) => {
-        const form = event.currentTarget;
+    const sendEmail = (e) => {
+        e.preventDefault();
+        const form = e.currentTarget;
         if (form.checkValidity() === false) {
-            event.preventDefault();
-            event.stopPropagation();
+            e.preventDefault();
+            e.stopPropagation();
         }
-  
         setValidated(true);
-    };
+        emailjs.sendForm('service_2tycxse', 'template_4klxh5c', e.target, 'user_DBLub1SoPNOiZrKb1nEMy')
+            .then((result) => {
+                console.info(result);
+            }, (error) => {
+                console.info(error);
+            });
+    }
   
     return (
-        <Form noValidate validated={validated} onSubmit={handleSubmit} id='contact-form'>
+        <Form noValidate validated={validated} onSubmit={sendEmail} id='contact-form'>
             <Container>
                 <Row xs={1} md={2}>
                     <Col>
-                        <Form.Group controlId="contactName">
+                        <Form.Group controlId="from_name">
                             <Form.Label>Your name</Form.Label>
-                            <Form.Control type="text" placeholder="Your name..." size="lg" required />
+                            <Form.Control type="text" name="from_name" placeholder="Your name..." size="lg" required />
                         </Form.Group>
-                        <Form.Group controlId="contactEmail">
+                        <Form.Group controlId="from_email">
                             <Form.Label>Email address</Form.Label>
-                            <Form.Control type="email" placeholder="Your email address..." size="lg" required />
+                            <Form.Control type="email" name="from_email" placeholder="Your email address..." size="lg" required />
                         </Form.Group>
-                        <Form.Group controlId="contactNumber">
+                        <Form.Group controlId="from_phone">
                             <Form.Label>Telephone</Form.Label>
-                            <Form.Control type="text" placeholder="Your phone number..." size="lg" />
+                            <Form.Control type="text" name="from_phone" placeholder="Your phone number..." size="lg" />
                         </Form.Group>
                     </Col>
                     <Col>
-                        <Form.Group controlId="exampleForm.ControlTextarea1" className='d-flex flex-column h-100 pb-3'>
+                        <Form.Group controlId="message" className='d-flex flex-column h-100 pb-3'>
                             <Form.Label>Message</Form.Label>
-                            <Form.Control as="textarea" rows={5} required minLength={24} className='flex-grow-1' />
+                            <Form.Control as="textarea" rows={5} name="message" required minLength={24} className='flex-grow-1' />
                         </Form.Group>
                     </Col>
                 </Row>
