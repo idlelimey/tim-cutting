@@ -79,6 +79,8 @@ function Contrast(){
         setBgHSL(getHSL([BGR, BGR, BGR]));
     }, [BGB, BGG, BGR, FGB, FGG, FGR]);
 
+    document.title = 'Colour Contrast Ratio - Test your colour combinations for WCAG Level AA and AAA';
+
     return (
         <>
             <ScrollToTop />

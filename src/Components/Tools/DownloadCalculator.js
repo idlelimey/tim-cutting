@@ -95,6 +95,8 @@ function DownloadCalc() {
         changeFileSizeTypeSelected();
     }, [binary, fileSizeType]);
 
+    document.title = 'Download Calculator - Estimate download times';
+
     return (
         <>
             <ScrollToTop />

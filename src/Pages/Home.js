@@ -19,7 +19,7 @@ function Home() {
         }
     ];
 
-    console.info('y', heroButtons);
+    document.title = 'Tim Cutting - Web Developer, JS, React, Wordpress';
     
     return (
         <>

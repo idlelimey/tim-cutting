@@ -6,6 +6,7 @@ import SingleJob from '../Components/SingleJob';
 import Content from '../Data/Content.json';
 
 function CV() {
+    document.title = 'Tim Cutting - Curriculum Vitae, Frontend Developer, Colchester';
     return (
         <>
             <ScrollToTop />

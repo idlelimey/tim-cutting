@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import ScrollToTop from '../Components/Common/ScrollToTop';
 
 function Tools(){
-
+    document.title = 'Tools - Tim Cutting, Web Developer';
     return (
         <>
             <ScrollToTop />

@@ -72,6 +72,8 @@ function PasswordEntropy() {
 
     }, [alhpaLower, alhpaUpper, numberSymbols, numbers, otherSymbols, password]);
 
+    document.title = 'Password Strength Test - Calculate your password entropy';
+
     return (
         <>
             <ScrollToTop />
