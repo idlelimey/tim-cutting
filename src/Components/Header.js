@@ -15,7 +15,7 @@ function Header({theme, setTheme}) {
             <Navbar expand="lg" expanded={expandNav} sticky="top" className="p-0 shadow">
 
                 <Navbar.Brand className="p-0 px-3">
-                    <NavLink to="/" exact className="text-decoration-none">
+                    <NavLink to="/" className="text-decoration-none" title="Tim Cutting">
                         <i className='icon-tim size-4 text-primary'></i>
                     </NavLink>
                 </Navbar.Brand>
