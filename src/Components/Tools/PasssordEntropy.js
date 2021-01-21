@@ -151,10 +151,17 @@ function PasswordEntropy() {
                     <Col>
                         <h2>Result</h2>
                         <p className="mb-2">{result === '💩' ? 'This password is too common' : (wittyText === ' ' ? '\u00A0' : wittyText)}</p>
-                        {password.length !== 0 && (
+                        {password.length !== 0 ? (
                             <p className="h1 text-primary text-capitalize">
                                 {result === '💩' ? result : `~${result} Bits`}
                             </p>
+                        ) : (
+                            <>
+                                <p className="h1 text-mid text-capitalize">
+                                    <i className="icon-double-dash"></i> Bits
+                                </p>
+                                <small className="text-muted">Start typing to see the entropy score</small>
+                            </>
                         )}
                     </Col>
                 </Row>
