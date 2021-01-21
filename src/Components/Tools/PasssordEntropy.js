@@ -81,7 +81,7 @@ function PasswordEntropy() {
             <ToolsNav />
             <Container as="section">
                 <Row xs={1} lg={3}>
-                    <Col>
+                    <Col className="mb-5 mb-lg-0">
                         <h2 className="mb-3">
                             <span className="d-flex align-items-center">
                                  Character Set
@@ -140,7 +140,7 @@ function PasswordEntropy() {
                         </div>
                      
                     </Col>
-                    <Col>
+                    <Col className="mb-5 mb-lg-0">
                         <h2>Password</h2>
                         <Form.Group controlId="formBasicEmail">
                             <Form.Label>Enter a password example</Form.Label>
@@ -155,7 +155,7 @@ function PasswordEntropy() {
                             </Form.Text>
                         </Form.Group>
                     </Col>
-                    <Col>
+                    <Col className="mb-5 mb-lg-0">
                         <h2>Result</h2>
                         <p className="mb-2">{result === '💩' ? 'This password is too common' : (wittyText === ' ' ? '\u00A0' : wittyText)}</p>
                         {password.length === 0 ? (
