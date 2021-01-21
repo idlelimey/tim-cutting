@@ -2,6 +2,7 @@ import React, { useEffect, useState, useContext } from 'react';
 import { Col, Container, Row, Form, OverlayTrigger, Popover } from 'react-bootstrap';
 import { ThemeContext } from '../../App';
 import ScrollToTop from '../Common/ScrollToTop';
+import PasswordGenerator from './PasswordGenerator';
 import ToolsNav from './ToolsNavigation';
 
 function PasswordEntropy() {
@@ -166,9 +167,12 @@ function PasswordEntropy() {
                         )}
                     </Col>
                 </Row>
-                <Row className="mt-5">
+            </Container>
+            <PasswordGenerator />
+            <Container as="section">
+                <Row>
                     <Col>
-                        <small className="text-muted">This calculator is intended as a proof-of-concept and should be used in conjuction with best advice from a security professional.  You are responbible for protecting your passwords and use of this tool is no guarantee of accuracy.  Use at your own risk.</small>
+                        <small className="text-muted">This entropy calculator and password generator are intended as a proof-of-concept and should be used in conjuction with best advice from a security professional.  You are responbible for protecting your passwords and use of these tools is no guarantee of accuracy or safety online.  Use at your own risk.</small>
                     </Col>
                 </Row>
             </Container>
