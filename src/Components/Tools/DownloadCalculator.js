@@ -206,6 +206,8 @@ function DownloadCalc() {
                         )}
                     </Col>
                 </Row>
+            </Container>
+            <Container as="section">
                 <Row>
                     <Col>
                         <small className="text-muted">Download time will be an estimate as there are <i>many</i> variables that can affect the result. Download speeds will depend on the fidelity of your connection and the quality of your hardware among other things.  Let&apos;s call it a reasonable guess.</small>
