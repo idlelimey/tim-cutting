@@ -49,9 +49,9 @@ function Home() {
                         <h1 className="mb-3">Frontend<br /><span className="text-muted">Front and centre</span></h1>
                         <p className="lead">Modern frontend web development using the latest technology to drive performance and scalability.</p>
                         <ul className="ticks">
-                            <li>Javascript, React</li>
+                            <li>JavaScript, React</li>
                             <li>Responsive</li>
-                            <li>Wordpress</li>
+                            <li>WordPress</li>
                         </ul>
                     </Col>
                     <Col className="mb-5 mb-lg-0">
@@ -59,7 +59,7 @@ function Home() {
                         <p className="lead">Attractive and usable design combining the best UX/UI and design practices with browser compatibility.</p>
                         <ul className="ticks">
                             <li>User Experience</li>
-                            <li>Web &amp; Packaing Design</li>
+                            <li>Web &amp; Packaging Design</li>
                             <li>Branding</li>
                         </ul>
                     </Col>

@@ -105,7 +105,7 @@ function DownloadCalc() {
                 <Row xs={1} lg={3}>
                     <Col>
                         <h2>File Size</h2>
-                        <label htmlFor="filesize">{`Enter the filesize in ${fileSizeType}`}</label>
+                        <label htmlFor="filesize">{`Enter the file size in ${fileSizeType}`}</label>
                         <InputGroup>
                             <FormControl
                                 type="number"
@@ -115,10 +115,10 @@ function DownloadCalc() {
                                 size="lg"
                             />
                             <DropdownButton
-                                as={InputGroup.Prepend}
+                                as={InputGroup.Append}
                                 title={fileSizeType}
                                 variant="outline-primary"
-                                className="rounded-right"
+                                id="ff-dd"
                             >
                                 {binary ? (
                                     <>
@@ -169,9 +169,10 @@ function DownloadCalc() {
                                 size="lg"
                             />
                             <DropdownButton
-                                as={InputGroup.Prepend}
+                                as={InputGroup.Append}
                                 title={bandwidthType}
                                 variant="outline-primary"
+                                id="bw-dd"
                             >
                                 <Dropdown.Item onClick={() => setBandwidthType('Kbps')}>Kbps</Dropdown.Item>
                                 <Dropdown.Item onClick={() => setBandwidthType('Mbps')}>Mbps</Dropdown.Item>

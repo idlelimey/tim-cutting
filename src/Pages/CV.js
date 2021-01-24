@@ -53,11 +53,11 @@ function CV() {
                                 </Col>
                                 <Col>
                                     <ul className='list-unstyled'>
-                                        <li className='pb-3'>Javascript</li>
+                                        <li className='pb-3'>JavaScript</li>
                                         <li className='pb-3'>ES5/6, ReactJS, jQuery</li>
                                         <li className='pb-3'>CSS 3, SASS</li>
                                         <li className='pb-3'>HTML, Pug, HandleBars </li>
-                                        <li className='pb-3'>Wordpress</li>
+                                        <li className='pb-3'>WordPress</li>
                                         <li className='pb-3'>Bootstrap &amp; Foundation</li>
                                     </ul>
                                 </Col>

@@ -145,7 +145,7 @@ function PasswordEntropy() {
                             <small className="text-muted float-right mt-1 mr-5">23 chars</small>
                         </p>
                         <p>
-                            <small className="text-muted float-right mt-1 mr-5">Totol {charSet} chars</small>
+                            <small className="text-muted float-right mt-1 mr-5">Total {charSet} chars</small>
                         </p>
                     </Col>
                     <Col>
@@ -170,7 +170,7 @@ function PasswordEntropy() {
             <Container as="section">
                 <Row>
                     <Col>
-                        <small className="text-muted">This entropy calculator and password generator are intended as a proof-of-concept and should be used in conjuction with best advice from a security professional.  You are responbible for protecting your passwords and use of these tools is no guarantee of accuracy or safety online.  Use at your own risk.</small>
+                        <small className="text-muted">This entropy calculator and password generator are intended as a proof-of-concept and should be used in conjunction with best advice from a security professional.  You are responsible for protecting your passwords and use of these tools is no guarantee of accuracy or safety online.  Use at your own risk.</small>
                     </Col>
                 </Row>
             </Container>
