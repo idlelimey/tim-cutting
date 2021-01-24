@@ -62,6 +62,10 @@ code {
     padding: .25rem .5rem;
 }
 
+.cursor-pointer {
+    cursor: pointer;
+}
+
 /* Change Autocomplete styles in Chrome*/
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 

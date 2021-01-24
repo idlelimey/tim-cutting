@@ -38,9 +38,7 @@ function Contact() {
                 });            
         }
         
-        setValidated(true); 
-
-
+        setValidated(true);
     }
 
     useEffect(() => {
@@ -50,7 +48,6 @@ function Contact() {
   
     return (
         <Form noValidate validated={validated} onSubmit={sendEmail} id='contact-form'>
-            
             <Container as="section">
                 {!isSent ? (
                     <Row xs={1} md={2}>
@@ -58,15 +55,12 @@ function Contact() {
                             <Form.Group controlId="from_name" className="position-relative">
                                 <Form.Label className="d-block">
                                     Your name
-                                    
                                 </Form.Label>
                                 <Form.Control type="text" name="from_name" placeholder="Your name..." size="lg" required />
 
                                 <Form.Control.Feedback type="invalid" className="position-absolute text-right" style={{top: '.5rem'}}>
                                     Gonna need a name.
                                 </Form.Control.Feedback>
-
-
                             </Form.Group>
                             <Form.Group controlId="from_email" className="position-relative">
                                 <Form.Label>Email address</Form.Label>
@@ -74,7 +68,6 @@ function Contact() {
                                 <Form.Control.Feedback type="invalid" className="position-absolute text-right" style={{top: '.5rem'}}>
                                     Enter your email address.
                                 </Form.Control.Feedback>
-
                             </Form.Group>
                             <Form.Group controlId="from_phone">
                                 <Form.Label>Telephone</Form.Label>
@@ -104,8 +97,7 @@ function Contact() {
                         <Button type="submit" variant="outline-primary" size='lg' block ref={sendButton}>Submit form</Button>
                     </Col>
                 </Row>
-            </Container>                
-
+            </Container>
         </Form>
     );
 }

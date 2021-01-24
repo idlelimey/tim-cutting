@@ -13,7 +13,7 @@
     font-style: normal;
 
     &.size-1 {
-        font-size: $font-size-base;
+        font-size: $font-size-base * 1.25;
     }
 
     &.size-2 {
@@ -38,6 +38,10 @@
 
     &.circle-primary {
         background-image: radial-gradient(circle closest-side, $primary 0, $primary 97%, transparent 100%);
+    }
+
+    &.pully-n1 {
+        transform: translateY(-.25rem);
     }
 }
 
@@ -68,7 +72,12 @@ $icons: (
     paint       : '\004d',
     password    : '\004e',
     double-dash : '\004f',
-    tim         : '\0054'
+    share       : '\0053',
+    tim         : '\0054',
+    facebook    : '\0066',
+    linkedin    : '\0069',
+    twitter     : '\0074',
+    whatsapp    : '\0077'
 );
 
 @each $name, $char in $icons {
