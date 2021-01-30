@@ -44,6 +44,7 @@ function Header({theme, setTheme}) {
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className={`share-${showShare ? 'in' : 'out'}`}
+                                            aria-label="Share on LinkedIn"
                                         >
                                             <i className={'icon-linkedin text-primary size-2 cursor-pointer'}></i>
                                         </a>
@@ -52,6 +53,7 @@ function Header({theme, setTheme}) {
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className={`share-${showShare ? 'in' : 'out'}`}
+                                            aria-label="Share on Facebook"
                                         >
                                             <i className={`icon-facebook share-${showShare ? 'in' : 'out'} text-primary size-2 cursor-pointer`}></i>
                                         </a>
@@ -60,6 +62,7 @@ function Header({theme, setTheme}) {
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className={`share-${showShare ? 'in' : 'out'}`}
+                                            aria-label="Share on Twitter"
                                         >
                                             <i className={`icon-twitter  share-${showShare ? 'in' : 'out'} text-primary size-2 cursor-pointer`}></i>
                                         </a>
@@ -68,6 +71,7 @@ function Header({theme, setTheme}) {
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className={`share-${showShare ? 'in' : 'out'}`}
+                                            aria-label="Share on Whatsapp"
                                         >
                                             <i className={`icon-whatsapp share-${showShare ? 'in' : 'out'} text-primary size-2 cursor-pointer`}></i>
                                         </a>
