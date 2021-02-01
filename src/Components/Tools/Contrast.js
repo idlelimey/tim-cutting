@@ -114,7 +114,7 @@ function Contrast(){
                                 value={FGR}
                             />
                             <PlusMinus theState={FGR} theSetter={setFGR} icon="minus" theLabel="Decrease Red value" />
-                            <span className="rgb-label">{FGR}</span>
+                            <span className="range-label">{FGR}</span>
                             <PlusMinus theState={FGR} theSetter={setFGR} icon="add" theLabel="Increase Red value" />
                         </Form.Group>
                         <Form.Group controlId="fgg-range" className="d-flex align-items-center">
@@ -129,7 +129,7 @@ function Contrast(){
                                 value={FGG}
                             />
                             <PlusMinus theState={FGG} theSetter={setFGG} icon="minus" theLabel="Decrease Green value" />
-                            <span className="rgb-label">{FGG}</span>
+                            <span className="range-label">{FGG}</span>
                             <PlusMinus theState={FGG} theSetter={setFGG} icon="add" theLabel="Increase Green value" />
                         </Form.Group>
                         <Form.Group controlId="fgb-range" className="d-flex align-items-center">
@@ -144,7 +144,7 @@ function Contrast(){
                                 value={FGB}
                             />
                             <PlusMinus theState={FGB} theSetter={setFGB} icon="minus" theLabel="Decrease Blue value" />
-                            <span className="rgb-label">{FGB}</span>
+                            <span className="range-label">{FGB}</span>
                             <PlusMinus theState={FGB} theSetter={setFGB} icon="add" theLabel="Increase Blue value" />
                         </Form.Group>
                         <code className="d-block mt-5 mt-lg-auto">
@@ -181,7 +181,7 @@ function Contrast(){
                                 value={BGR}
                             />
                             <PlusMinus theState={BGR} theSetter={setBGR} icon="minus" theLabel="Decrease Red value" />
-                            <span className="rgb-label">{BGR}</span>
+                            <span className="range-label">{BGR}</span>
                             <PlusMinus theState={BGR} theSetter={setBGR} icon="add" theLabel="Increase Red value" />
                         </Form.Group>
                         <Form.Group controlId="bgg-range" className="d-flex align-items-center">
@@ -196,7 +196,7 @@ function Contrast(){
                                 value={BGG}
                             />
                             <PlusMinus theState={BGG} theSetter={setBGG} icon="minus" theLabel="Decrease Green value" />
-                            <span className="rgb-label">{BGG}</span>
+                            <span className="range-label">{BGG}</span>
                             <PlusMinus theState={BGG} theSetter={setBGG} icon="add" theLabel="Increase Green value" />
                         </Form.Group>
                         <Form.Group controlId="bgb-range" className="d-flex align-items-center">
@@ -211,7 +211,7 @@ function Contrast(){
                                 value={BGB}
                             />
                             <PlusMinus theState={BGB} theSetter={setBGB} icon="minus" theLabel="Decrease Blue value" />
-                            <span className="rgb-label">{BGB}</span>
+                            <span className="range-label">{BGB}</span>
                             <PlusMinus theState={BGB} theSetter={setBGB} icon="add" theLabel="Increase Blue value" />
                         </Form.Group>
                         <code className="d-block mt-5 mt-lg-auto">

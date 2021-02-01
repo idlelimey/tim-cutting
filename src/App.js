@@ -16,6 +16,7 @@ import Tools from './Pages/Tools';
 import DownloadCalc from './Components/Tools/DownloadCalculator';
 import PasswordEntropy from './Components/Tools/PasssordEntropy';
 import Contrast from './Components/Tools/Contrast';
+import Gradient from './Components/Tools/Gradient';
 
 export const ThemeContext = React.createContext();
 
@@ -44,6 +45,7 @@ function App() {
                                 <Route path="/tools/download-calculator" exact component={DownloadCalc} />
                                 <Route path="/tools/contrast-ratio" exact component={Contrast} />
                                 <Route path="/tools/password-entropy" exact component={PasswordEntropy} />
+                                <Route path="/tools/css-gradient-generator" exact component={Gradient} />
                                 <Route path="/404" component={NotFound} />
                                 <Redirect to="/404" />
                             </Switch>

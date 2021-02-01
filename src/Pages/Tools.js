@@ -25,7 +25,7 @@ function Tools(){
                             style={{wordSpacing: '99vw'}}
                         >
                             <i className="icon-down-clock size-5 font-weight-normal"></i>
-                            <p className="h2">Download Calculator</p>
+                            <p className="h3">Download Calculator</p>
                         </NavLink>
                     </Col>
                     <Col>
@@ -35,7 +35,16 @@ function Tools(){
                             style={{wordSpacing: '99vw'}}
                         >
                             <i className="icon-paint size-5 font-weight-normal"></i>
-                            <p className="h2">Contrast Ratio</p>
+                            <p className="h3">Contrast Ratio</p>
+                        </NavLink>
+                    </Col>
+                    <Col>
+                        <NavLink
+                            to="/tools/css-gradient-generator"
+                            className="btn btn-outline-primary btn-block rounded mb-3 py-3"
+                        >
+                            <i className="icon-code size-5 font-weight-normal"></i>
+                            <p className="h3">CSS Gradient<br />Generator</p>
                         </NavLink>
                     </Col>
                     <Col>
@@ -45,7 +54,7 @@ function Tools(){
                             style={{wordSpacing: '99vw'}}
                         >
                             <i className="icon-password size-5 font-weight-normal"></i>
-                            <p className="h2">Password Entropy</p>
+                            <p className="h3">Password Entropy</p>
                         </NavLink>
                     </Col>
                 </Row>
