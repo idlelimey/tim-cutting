@@ -209,6 +209,10 @@ function DownloadCalc() {
                 </Row>
             </Container>
             <Container as="section">
+                <h1 className="mb-3">Download Calculator</h1>
+                <p>Calculate download times with ease with this useful tool.  Eyeing up that gargantuan new 4K shooter on Xbox?  Will Photoshop update over your lunch break?  Find out by entering the two key metrics using common formats.  You can send me feedback or feature requests using the <a href="#contact-form">contact form</a> below.</p>
+            </Container>
+            <Container as="section">
                 <Row>
                     <Col>
                         <small className="text-muted">Download time will be an estimate as there are <i>many</i> variables that can affect the result. Download speeds will depend on the fidelity of your connection and the quality of your hardware among other things.  Let&apos;s call it a reasonable guess.</small>

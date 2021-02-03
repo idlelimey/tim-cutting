@@ -80,6 +80,8 @@ function Gradient() {
         setLayers(newState);
     }
 
+    document.title = 'CSS Gradient Generator - Easily create multi-layer CSS gradients';
+
     return (
         <>
             <ScrollToTop />
@@ -349,8 +351,8 @@ function Gradient() {
                 </Row>
             </Container>
             <Container as="section">
-                <h2 className="mb-3">CSS Gradient Generator</h2>
-                <p>Build a mulit-layer CSS gradient easily with this generator.  Modify the layers gradient angle and set colour stops, you can set the visibility of each layer to make it easier to see what is going on with individual layers.  When you&apos;re finished, simply copy the CSS and apply it to your elements.  I would welcome feedback, send me a message using the contact form below.</p>
+                <h1 className="mb-3">CSS Gradient Generator</h1>
+                <p>Build a multi-layer CSS gradient easily with this generator.  Modify the layers gradient angle and set colour stops, you can set the visibility of each layer to make it easier to see what is going on with individual layers.  When you&apos;re finished, simply copy the CSS and apply it to your elements.  I would welcome feedback, send me a message using the <a href="#contact-form">contact form</a> below.</p>
             </Container>
         </>
         

@@ -267,6 +267,10 @@ function Contrast(){
                 </Row>
 
             </Container>
+            <Container as="section">
+                <h1 className="mb-3">WCAG Contrast Calculator</h1>
+                <p>Web Content Accessibility Guidelines (WCAG) are a set of accessibility guidelines developers and designers can use to ensure their content is comfortably viewed by their users.  Ensuring a strong contrast within your designs is good for everyone.  Using this tool, you can check to ensure your contrast ratios are up to the required level for your users.  You can send me feedback or feature requests using the <a href="#contact-form">contact form</a> below.</p>
+            </Container>
         </>
     );
 }
