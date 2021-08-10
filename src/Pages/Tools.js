@@ -57,6 +57,15 @@ function Tools(){
                             <p className="h3">Password Entropy</p>
                         </NavLink>
                     </Col>
+                    <Col>
+                        <NavLink
+                            to="/tools/your-weight-in"
+                            className="btn btn-outline-primary btn-block rounded mb-3 py-3"
+                        >
+                            <i className="icon-weight size-5 font-weight-normal"></i>
+                            <p className="h3">Your Weight<br />In...</p>
+                        </NavLink>
+                    </Col>
                 </Row>
             </Container>
         </>
