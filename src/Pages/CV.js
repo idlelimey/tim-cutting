@@ -1,14 +1,18 @@
 import React from 'react';
 import { Container, Row, Col, Button, OverlayTrigger, Tooltip } from 'react-bootstrap';
+import { Helmet } from 'react-helmet-async';
 import BlockQuote from '../Components/Common/BlockQuote';
 import ScrollToTop from '../Components/Common/ScrollToTop';
 import SingleJob from '../Components/SingleJob';
 import Content from '../Data/Content.json';
 
 function CV() {
-    document.title = 'Tim Cutting - Curriculum Vitae, Frontend Developer, Colchester';
     return (
         <>
+            <Helmet>
+                <title>Tim Cutting, Resume/CV - Frontend Developer, Colchester. JS, React, Wordpress</title>
+                <meta name="description" content="Frontend Developer in Colchester with a strong background in commercial web development using standards-led JavaScript, SASS and PHP to produce high quality design and data driven user experiences. React, Wordpress, Bootstrap, etc." />
+            </Helmet>
             <ScrollToTop />
             <div className="pt-5 px-3 px-md-0">
                 <Container as="section">

@@ -3,6 +3,7 @@ import { Container, Row, Col, FormGroup, FormLabel, FormControl, Accordion, Butt
 import ScrollToTop from '../Common/ScrollToTop';
 import ToolsNav from './ToolsNavigation';
 import { DefaultGradient, newLayer, newColourStop } from '../../Data/Gradients';
+import { Helmet } from 'react-helmet-async';
 
 function Gradient() {
     const [bgCSS, setBgCSS] = useState('');
@@ -80,10 +81,12 @@ function Gradient() {
         setLayers(newState);
     }
 
-    document.title = 'CSS Gradient Generator - Easily create multi-layer CSS gradients';
-
     return (
         <>
+            <Helmet>
+                <title>CSS Gradient Generator by Tim Cutting - Web Developer, Colchester.</title>
+                <meta name="description" content="Build a multi-layer CSS gradient easily with this generator. Modify the layers gradient angle and set colour stops, you can set the visibility of each layer to make it easier to see what is going on with individual layers." />
+            </Helmet>
             <ScrollToTop />
             <ToolsNav />
             <Container className="p-0 mt-3 rounded" style={{backgroundColor: 'white', backgroundImage: 'linear-gradient(45deg, #ccc 25%, transparent 25%, transparent 75%, #ccc 75%, #ccc),linear-gradient(45deg, #ccc 25%, transparent 25%, transparent 75%, #ccc 75%, #ccc)', backgroundSize: '2rem 2rem', backgroundPosition: '0 0, 1rem 1rem', overflow: 'hidden'}}>

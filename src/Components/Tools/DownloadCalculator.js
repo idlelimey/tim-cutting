@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useContext } from 'react';
 import { Container, Row, Col, InputGroup, Form, FormControl, DropdownButton, Dropdown, OverlayTrigger, Popover } from 'react-bootstrap';
+import { Helmet } from 'react-helmet-async';
 import { ThemeContext } from '../../App';
 import ScrollToTop from '../Common/ScrollToTop';
 import ToolsNav from './ToolsNavigation';
@@ -95,10 +96,12 @@ function DownloadCalc() {
         changeFileSizeTypeSelected();
     }, [binary, fileSizeType]);
 
-    document.title = 'Download Calculator - Estimate download times';
-
     return (
         <>
+            <Helmet>
+                <title>Download Calculator by Tim Cutting - Web Developer, Colchester.</title>
+                <meta name="description" content="Calculate download times with ease with this useful tool. Eyeing up that gargantuan new 4K shooter on Xbox? Will Photoshop update over your lunch break? Find out by entering the two key metrics using common formats." />
+            </Helmet>
             <ScrollToTop />
             <ToolsNav />
             <Container as="section">

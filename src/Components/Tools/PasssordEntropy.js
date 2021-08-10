@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useContext } from 'react';
 import { Col, Container, Row, Form, OverlayTrigger, Popover } from 'react-bootstrap';
+import { Helmet } from 'react-helmet-async';
 import { ThemeContext } from '../../App';
 import ScrollToTop from '../Common/ScrollToTop';
 import PasswordGenerator from './PasswordGenerator';
@@ -78,10 +79,12 @@ function PasswordEntropy() {
         return 'attention text-warning';
     }
 
-    document.title = 'Password Strength Test - Calculate your password entropy';
-
     return (
         <>
+            <Helmet>
+                <title>Password Entropy Calculator by Tim Cutting - Web Developer, Colchester.</title>
+                <meta name="description" content="Get help using better, stronger passwords and check your existing passwords strength and resiliance to brute force attacks.  Use this Password Strength Test to see how your passwords perform." />
+            </Helmet>
             <ScrollToTop />
             <ToolsNav />
             <Container as="section">

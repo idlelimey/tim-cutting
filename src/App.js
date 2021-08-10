@@ -12,6 +12,7 @@ import Home from './Pages/Home';
 import Header from './Components/Header';
 import NotFound from './Pages/404';
 import Footer from './Components/Footer';
+import { HelmetProvider } from 'react-helmet-async';
 
 const Tools           = React.lazy(() => import('./Pages/Tools'));
 const DownloadCalc    = React.lazy(() => import('./Components/Tools/DownloadCalculator'));
@@ -36,28 +37,30 @@ function App() {
     return (
         <Router>
             <ThemeContext.Provider value={theme}>
-                <div className={`app${theme === 'dark' ? ' dark-mode' : ''}`}>
-                    <Header setTheme={setTheme} theme={theme} />
-                    <main>
-                        <div className="content">
-                            <Suspense fallback={<div className="p-5">Loading...</div>}>
-                                <Switch>
-                                    <Route path="/" exact component={Home} />
-                                    <Route path="/cv" component={CV} />
-                                    <Route path="/tools" exact component={Tools} />
-                                    <Route path="/tools/download-calculator" exact component={DownloadCalc} />
-                                    <Route path="/tools/contrast-ratio" exact component={Contrast} />
-                                    <Route path="/tools/password-entropy" exact component={PasswordEntropy} />
-                                    <Route path="/tools/css-gradient-generator" exact component={Gradient} />
-                                    <Route path="/tools/your-weight-in" component={YourWeightIn} />
-                                    <Route path="/404" component={NotFound} />
-                                    <Redirect to="/404" />
-                                </Switch>                                
-                            </Suspense>
-                        </div>
-                        <Footer />
-                    </main>
-                </div>
+                <HelmetProvider>
+                    <div className={`app${theme === 'dark' ? ' dark-mode' : ''}`}>
+                        <Header setTheme={setTheme} theme={theme} />
+                        <main>
+                            <div className="content">
+                                <Suspense fallback={<div className="p-5">Loading...</div>}>
+                                    <Switch>
+                                        <Route path="/" exact component={Home} />
+                                        <Route path="/cv" component={CV} />
+                                        <Route path="/tools" exact component={Tools} />
+                                        <Route path="/tools/download-calculator" exact component={DownloadCalc} />
+                                        <Route path="/tools/contrast-ratio" exact component={Contrast} />
+                                        <Route path="/tools/password-entropy" exact component={PasswordEntropy} />
+                                        <Route path="/tools/css-gradient-generator" exact component={Gradient} />
+                                        <Route path="/tools/your-weight-in" component={YourWeightIn} />
+                                        <Route path="/404" component={NotFound} />
+                                        <Redirect to="/404" />
+                                    </Switch>                                
+                                </Suspense>
+                            </div>
+                            <Footer />
+                        </main>
+                    </div>
+                </HelmetProvider>
             </ThemeContext.Provider>
         </Router>
     );

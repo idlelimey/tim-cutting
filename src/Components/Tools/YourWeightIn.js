@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import { Col, Container, Dropdown, DropdownButton, Form, FormControl, InputGroup, Row } from 'react-bootstrap';
+import { Helmet } from 'react-helmet-async';
 import ScrollToTop from '../Common/ScrollToTop';
 import ToolsNav from './ToolsNavigation';
 
@@ -107,6 +108,10 @@ function YourWeightIn() {
 
     return (
         <>
+            <Helmet>
+                <title>Your Weight In Gold by Tim Cutting - Web Developer, Colchester.</title>
+                <meta name="description" content="BMI? That means Bitcoin-Mass-Index, right?! We've all heard the saying &quot;worth your weight in Gold&quot;, but just what is that worth? Now you can find out using up to date pricing data and multiple currencies and commoditites." />
+            </Helmet>
             <ScrollToTop />
             <ToolsNav />
             <Container as="section">

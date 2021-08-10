@@ -1,5 +1,6 @@
 import React, { useEffect, useState} from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
+import { Helmet } from 'react-helmet-async';
 import PlusMinus from '../Common/PlusMinus';
 import ScrollToTop from '../Common/ScrollToTop';
 import ToolsNav from './ToolsNavigation';
@@ -83,6 +84,10 @@ function Contrast(){
 
     return (
         <>
+            <Helmet>
+                <title>Contrast Ratio by Tim Cutting - Web Developer, Colchester.</title>
+                <meta name="description" content="Check the colour contrast of your text using this online tool. Web Content Accessibility Guidelines (WCAG) are a set of accessibility guidelines developers and designers can use to ensure their content is comfortably viewed by their users. Ensuring a strong contrast within your designs is good for everyone." />
+            </Helmet>
             <ScrollToTop />
             <ToolsNav />
             <Container as="section" className="contrast">

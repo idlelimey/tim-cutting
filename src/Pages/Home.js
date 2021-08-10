@@ -5,6 +5,7 @@ import Content from '../Data/Content.json';
 import {Sony, TheSun, Sky, Telegraph, TypeCreative, Breakfree, BulkPowders} from '../Components/Common/BrandLogos';
 import ScrollToTop from '../Components/Common/ScrollToTop';
 import IconColumn from '../Components/Common/IconColumn';
+import { Helmet } from 'react-helmet-async';
 
 function Home() {
     const heroButtons = [
@@ -19,11 +20,13 @@ function Home() {
             href: '/cv'
         }
     ];
-
-    document.title = 'Tim Cutting - Web Developer, JS, React, Wordpress';
     
     return (
         <>
+            <Helmet>
+                <title>Tim Cutting - Web Developer, Colchester. JS, React, Wordpress</title>
+                <meta name="description" content="Web Developer in Colchester with a number of essential and valuable digital skills from many years in development, design and marketing. Frontend React, Wordpress, etc." />
+            </Helmet>
             <ScrollToTop />
             <div className="d-flex flex-column align-items-center justify-content-center hero" style={{minHeight: 'calc(100vh - 76px)'}}>
                 <Container className="p-0">
