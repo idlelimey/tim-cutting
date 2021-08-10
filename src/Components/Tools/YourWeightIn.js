@@ -87,7 +87,6 @@ function YourWeightIn() {
     }, [weight, weightType]);
 
     useEffect(() => {
-        console.info('x', commodityData.rates);
         let ozType = 28.3495231;
         let output = {
             USD: 0,
