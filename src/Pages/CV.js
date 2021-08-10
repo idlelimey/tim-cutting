@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Button, OverlayTrigger, Tooltip } from 'react-bootstrap';
+import { Helmet } from 'react-helmet-async';
 import BlockQuote from '../Components/Common/BlockQuote';
 import ScrollToTop from '../Components/Common/ScrollToTop';
 import SingleJob from '../Components/SingleJob';
@@ -8,6 +9,10 @@ import Content from '../Data/Content.json';
 function CV() {
     return (
         <>
+            <Helmet>
+                <title>Tim Cutting, Resume/CV - Frontend Developer, Colchester. JS, React, Wordpress</title>
+                <meta name="description" content="Frontend Developer in Colchester with a strong background in commercial web development using standards-led JavaScript, SASS and PHP to produce high quality design and data driven user experiences. React, Wordpress, Bootstrap, etc." />
+            </Helmet>
             <ScrollToTop />
             <div className="pt-5 px-3 px-md-0">
                 <Container as="section">
@@ -22,7 +27,7 @@ function CV() {
                                 <Button href='#contact-form' size='sm' variant="outline-primary" className='mt-3' title="Contact Tim">
                                     <i className='icon-mail size-2 p-1 font-weight-normal'></i>
                                 </Button><br />
-                                <Button href='/tim-cutting/Tim-Cutting-CV-fe-2021.pdf' size='sm' variant="outline-primary" className='mt-3' title="Download CV">
+                                <Button href='/Tim-Cutting-CV-fe-2021.pdf' size='sm' variant="outline-primary" className='mt-3' title="Download CV">
                                     <i className='icon-pdf size-2 p-1 font-weight-normal'></i>
                                 </Button>
                             </div>
@@ -52,11 +57,11 @@ function CV() {
                                 </Col>
                                 <Col>
                                     <ul className='list-unstyled'>
-                                        <li className='pb-3'>Javascript</li>
+                                        <li className='pb-3'>JavaScript</li>
                                         <li className='pb-3'>ES5/6, ReactJS, jQuery</li>
                                         <li className='pb-3'>CSS 3, SASS</li>
                                         <li className='pb-3'>HTML, Pug, HandleBars </li>
-                                        <li className='pb-3'>Wordpress</li>
+                                        <li className='pb-3'>WordPress</li>
                                         <li className='pb-3'>Bootstrap &amp; Foundation</li>
                                     </ul>
                                 </Col>

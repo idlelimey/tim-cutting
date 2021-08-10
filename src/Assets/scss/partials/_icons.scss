@@ -13,7 +13,7 @@
     font-style: normal;
 
     &.size-1 {
-        font-size: $font-size-base;
+        font-size: $font-size-base * 1.25;
     }
 
     &.size-2 {
@@ -39,12 +39,19 @@
     &.circle-primary {
         background-image: radial-gradient(circle closest-side, $primary 0, $primary 97%, transparent 100%);
     }
+
+    &.pully-n1 {
+        transform: translateY(-.25rem);
+    }
 }
 
 $icons: (
     add         : '\002b',
     minus       : '\002d',
+    code        : '\002f',
     shuffle     : '\0025',
+    show        : '\0028',
+    hide        : '\0029',
     booststrap  : '\0030',
     github      : '\0031',
     html        : '\0032',
@@ -67,7 +74,17 @@ $icons: (
     down-clock  : '\004c',
     paint       : '\004d',
     password    : '\004e',
-    tim         : '\0054'
+    double-dash : '\004f',
+    seo         : '\0050',
+    no-bug      : '\0051',
+    share       : '\0053',
+    tim         : '\0054',
+    weight      : '\0057',
+    delete      : '\0064',
+    facebook    : '\0066',
+    linkedin    : '\0069',
+    twitter     : '\0074',
+    whatsapp    : '\0077'
 );
 
 @each $name, $char in $icons {

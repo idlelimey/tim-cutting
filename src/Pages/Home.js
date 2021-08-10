@@ -4,6 +4,8 @@ import BlockQuote from '../Components/Common/BlockQuote';
 import Content from '../Data/Content.json';
 import {Sony, TheSun, Sky, Telegraph, TypeCreative, Breakfree, BulkPowders} from '../Components/Common/BrandLogos';
 import ScrollToTop from '../Components/Common/ScrollToTop';
+import IconColumn from '../Components/Common/IconColumn';
+import { Helmet } from 'react-helmet-async';
 
 function Home() {
     const heroButtons = [
@@ -15,16 +17,18 @@ function Home() {
         {
             icon: 'document',
             label: 'Read CV',
-            href: '/tim-cutting/cv'
+            href: '/cv'
         }
     ];
-
-    console.info('y', heroButtons);
     
     return (
         <>
+            <Helmet>
+                <title>Tim Cutting - Web Developer, Colchester. JS, React, Wordpress</title>
+                <meta name="description" content="Web Developer in Colchester with a number of essential and valuable digital skills from many years in development, design and marketing. Frontend React, Wordpress, etc." />
+            </Helmet>
             <ScrollToTop />
-            <div className="d-flex flex-column align-items-center justify-content-center" style={{minHeight: 'calc(100vh - 76px)'}}>
+            <div className="d-flex flex-column align-items-center justify-content-center hero" style={{minHeight: 'calc(100vh - 76px)'}}>
                 <Container className="p-0">
                     <svg x="0px" y="0px" viewBox="0 0 318.8 247.4" xmlSpace="preserve" id="hello">
                         <path strokeLinecap="round" d="M63.5,197.1c-3.8-46.6-9.4-93-16.8-139.2"/>
@@ -44,34 +48,51 @@ function Home() {
             </div>
 
             <Container as="section">
-                <Row xs={1} lg={3}>
-                    <Col className="mb-5 mb-lg-0">
-                        <h1 className="mb-3">Frontend<br /><span className="text-muted">Front and centre</span></h1>
-                        <p className="lead">Modern frontend web development using the latest technology to drive performance and scalability.</p>
-                        <ul className="ticks">
-                            <li>Javascript, React</li>
-                            <li>Responsive</li>
-                            <li>Wordpress</li>
-                        </ul>
-                    </Col>
-                    <Col className="mb-5 mb-lg-0">
-                        <h1 className="mb-3">Design<br /><span className="text-muted">Modern, Useful</span></h1>
-                        <p className="lead">Attractive and usable design combining the best UX/UI and design practices with browser compatibility.</p>
-                        <ul className="ticks">
-                            <li>User Experience</li>
-                            <li>Web &amp; Packaing Design</li>
-                            <li>Branding</li>
-                        </ul>
-                    </Col>
-                    <Col>
-                        <h1 className="mb-3">Search Optimised<br /><span className="text-muted">Human readable</span></h1>
-                        <p className="lead">Delivering SEO compliant code with an emphasis on maintaining readability for your end users.</p>
-                        <ul className="ticks">
-                            <li>AMP Development</li>
-                            <li>Page Optimisation</li>
-                            <li>JSON-LD Schema</li>
-                        </ul>
-                    </Col>
+                <Row xs={1} lg={2}>
+                    <IconColumn
+                        icon="code"
+                        heading="Frontend"
+                        subheading="Front and centre"
+                        content="Modern frontend web development using the latest technology to drive performance and scalability."
+                        list={[
+                            'JavaScript, React',
+                            'Responsive',
+                            'WordPress'
+                        ]}
+                    />
+                    <IconColumn
+                        icon="paint"
+                        heading="Design"
+                        subheading="Modern, Useful"
+                        content="Attractive and usable design combining the best UX/UI and design practices with browser compatibility."
+                        list={[
+                            'User Experience',
+                            'Web &amp; Packaging Design',
+                            'Branding'
+                        ]}
+                    />
+                    <IconColumn
+                        icon="seo"
+                        heading="Search Optimised"
+                        subheading="Human readable"
+                        content="Delivering SEO compliant code with an emphasis on maintaining readability for your end users."
+                        list={[
+                            'AMP Development',
+                            'Page Optimisation',
+                            'JSON-LD Schema'
+                        ]}
+                    />
+                    <IconColumn
+                        icon="no-bug"
+                        heading="Compatibility"
+                        subheading="Across Every Device"
+                        content="Browser &amp; device tested for compatibility.  Strict accessibility testing ensures  content is rendered the way you intended."
+                        list={[
+                            'Device testing',
+                            'Full Browser Compatibility',
+                            'WCAG Compliancy'
+                        ]}
+                    /> 
                 </Row>
             </Container>
 

@@ -2,7 +2,6 @@ import React from 'react'
 import { Button, Container } from 'react-bootstrap';
 
 function BlockQuote({content, fluid, icon, buttons}) {
-    console.info('x', buttons.length);
     return (
         <Container fluid={fluid}>
             <blockquote className="blockquote d-flex">

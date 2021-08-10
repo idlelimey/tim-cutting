@@ -1,5 +1,6 @@
 import React, { useEffect, useState} from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
+import { Helmet } from 'react-helmet-async';
 import PlusMinus from '../Common/PlusMinus';
 import ScrollToTop from '../Common/ScrollToTop';
 import ToolsNav from './ToolsNavigation';
@@ -79,8 +80,14 @@ function Contrast(){
         setBgHSL(getHSL([BGR, BGR, BGR]));
     }, [BGB, BGG, BGR, FGB, FGG, FGR]);
 
+    document.title = 'Colour Contrast Ratio - Test your colour combinations for WCAG Level AA and AAA';
+
     return (
         <>
+            <Helmet>
+                <title>Contrast Ratio by Tim Cutting - Web Developer, Colchester.</title>
+                <meta name="description" content="Check the colour contrast of your text using this online tool. Web Content Accessibility Guidelines (WCAG) are a set of accessibility guidelines developers and designers can use to ensure their content is comfortably viewed by their users. Ensuring a strong contrast within your designs is good for everyone." />
+            </Helmet>
             <ScrollToTop />
             <ToolsNav />
             <Container as="section" className="contrast">
@@ -112,7 +119,7 @@ function Contrast(){
                                 value={FGR}
                             />
                             <PlusMinus theState={FGR} theSetter={setFGR} icon="minus" theLabel="Decrease Red value" />
-                            <span className="rgb-label">{FGR}</span>
+                            <span className="range-label">{FGR}</span>
                             <PlusMinus theState={FGR} theSetter={setFGR} icon="add" theLabel="Increase Red value" />
                         </Form.Group>
                         <Form.Group controlId="fgg-range" className="d-flex align-items-center">
@@ -127,7 +134,7 @@ function Contrast(){
                                 value={FGG}
                             />
                             <PlusMinus theState={FGG} theSetter={setFGG} icon="minus" theLabel="Decrease Green value" />
-                            <span className="rgb-label">{FGG}</span>
+                            <span className="range-label">{FGG}</span>
                             <PlusMinus theState={FGG} theSetter={setFGG} icon="add" theLabel="Increase Green value" />
                         </Form.Group>
                         <Form.Group controlId="fgb-range" className="d-flex align-items-center">
@@ -142,7 +149,7 @@ function Contrast(){
                                 value={FGB}
                             />
                             <PlusMinus theState={FGB} theSetter={setFGB} icon="minus" theLabel="Decrease Blue value" />
-                            <span className="rgb-label">{FGB}</span>
+                            <span className="range-label">{FGB}</span>
                             <PlusMinus theState={FGB} theSetter={setFGB} icon="add" theLabel="Increase Blue value" />
                         </Form.Group>
                         <code className="d-block mt-5 mt-lg-auto">
@@ -179,7 +186,7 @@ function Contrast(){
                                 value={BGR}
                             />
                             <PlusMinus theState={BGR} theSetter={setBGR} icon="minus" theLabel="Decrease Red value" />
-                            <span className="rgb-label">{BGR}</span>
+                            <span className="range-label">{BGR}</span>
                             <PlusMinus theState={BGR} theSetter={setBGR} icon="add" theLabel="Increase Red value" />
                         </Form.Group>
                         <Form.Group controlId="bgg-range" className="d-flex align-items-center">
@@ -194,7 +201,7 @@ function Contrast(){
                                 value={BGG}
                             />
                             <PlusMinus theState={BGG} theSetter={setBGG} icon="minus" theLabel="Decrease Green value" />
-                            <span className="rgb-label">{BGG}</span>
+                            <span className="range-label">{BGG}</span>
                             <PlusMinus theState={BGG} theSetter={setBGG} icon="add" theLabel="Increase Green value" />
                         </Form.Group>
                         <Form.Group controlId="bgb-range" className="d-flex align-items-center">
@@ -209,7 +216,7 @@ function Contrast(){
                                 value={BGB}
                             />
                             <PlusMinus theState={BGB} theSetter={setBGB} icon="minus" theLabel="Decrease Blue value" />
-                            <span className="rgb-label">{BGB}</span>
+                            <span className="range-label">{BGB}</span>
                             <PlusMinus theState={BGB} theSetter={setBGB} icon="add" theLabel="Increase Blue value" />
                         </Form.Group>
                         <code className="d-block mt-5 mt-lg-auto">
@@ -264,6 +271,10 @@ function Contrast(){
                     </Col>
                 </Row>
 
+            </Container>
+            <Container as="section">
+                <h1 className="mb-3">WCAG Contrast Calculator</h1>
+                <p>Web Content Accessibility Guidelines (WCAG) are a set of accessibility guidelines developers and designers can use to ensure their content is comfortably viewed by their users.  Ensuring a strong contrast within your designs is good for everyone.  Using this tool, you can check to ensure your contrast ratios are up to the required level for your users.  You can send me feedback or feature requests using the <a href="#contact-form">contact form</a> below.</p>
             </Container>
         </>
     );

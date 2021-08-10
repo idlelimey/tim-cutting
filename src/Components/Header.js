@@ -5,6 +5,7 @@ import { NavLink, useLocation } from 'react-router-dom';
 function Header({theme, setTheme}) {
     let location = useLocation();
     const [expandNav, setExpandNav] = useState(false);
+    const [showShare, setShowShare] = useState(false);
 
     useEffect(() => {
         setExpandNav(false);
@@ -15,7 +16,7 @@ function Header({theme, setTheme}) {
             <Navbar expand="lg" expanded={expandNav} sticky="top" className="p-0 shadow">
 
                 <Navbar.Brand className="p-0 px-3">
-                    <NavLink to="/tim-cutting/" exact className="text-decoration-none">
+                    <NavLink to="/" className="text-decoration-none" title="Tim Cutting">
                         <i className='icon-tim size-4 text-primary'></i>
                     </NavLink>
                 </Navbar.Brand>
@@ -28,14 +29,60 @@ function Header({theme, setTheme}) {
                 </Navbar.Toggle>
                 <Navbar.Collapse id="nav">
                     <Nav className="mr-auto">
-                        <NavLink className="nav-link ml-4 my-2 m-lg-0" activeClassName="active" to="/tim-cutting/" exact>Home</NavLink>
-                        <NavLink className="nav-link ml-4 my-2 m-lg-0" activeClassName="active" to="/tim-cutting/cv">CV</NavLink>
-                        <NavLink className="nav-link ml-4 my-2 m-lg-0" activeClassName="active" to="/tim-cutting/tools">Tools</NavLink>
+                        <NavLink className="nav-link ml-4 my-2 m-lg-0" activeClassName="active" to="/" exact>Home</NavLink>
+                        <NavLink className="nav-link ml-4 my-2 m-lg-0" activeClassName="active" to="/cv">CV</NavLink>
+                        <NavLink className="nav-link ml-4 my-2 m-lg-0" activeClassName="active" to="/tools">Tools</NavLink>
+                        
                     </Nav>
                     <Nav>
                         <Row noGutters className='align-items-center'>
                             <Col className='text-right flex-grow-1'>
-                                <span className='icon-font size-2 pr-2 text-mid' id="theme-label">F</span>
+                                <div className="d-flex">
+                                    <div className={'share-icons ml-3 my-2 m-lg-0 flex-grow-1'}>
+                                        <a
+                                            href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Ftimcutting.co.uk%2F&title=Tim%20Cutting&source=https%3A%2F%2Fjonsuh.com%2F&summary=Tim+Cutting+is+a+frontend+web+developer+in+Colchester%2C+UK.+JavaScript%2C+React%2C+UI%2FUX%2C+WordPress"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className={`share-${showShare ? 'in' : 'out'}`}
+                                            aria-label="Share on LinkedIn"
+                                        >
+                                            <i className={'icon-linkedin text-primary size-2 cursor-pointer'}></i>
+                                        </a>
+                                        <a
+                                            href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftimcutting.co.uk%2F"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className={`share-${showShare ? 'in' : 'out'}`}
+                                            aria-label="Share on Facebook"
+                                        >
+                                            <i className={`icon-facebook share-${showShare ? 'in' : 'out'} text-primary size-2 cursor-pointer`}></i>
+                                        </a>
+                                        <a
+                                            href="https://twitter.com/intent/tweet/?text=Tim+Cutting+is+a+frontend+web+developer+in+Colchester%2C+UK.+JavaScript%2C+React%2C+UI%2FUX%2C+WordPress.&url=https%3A%2F%2Ftimcutting.co.uk%2F&hashtags=web,development,js,react"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className={`share-${showShare ? 'in' : 'out'}`}
+                                            aria-label="Share on Twitter"
+                                        >
+                                            <i className={`icon-twitter  share-${showShare ? 'in' : 'out'} text-primary size-2 cursor-pointer`}></i>
+                                        </a>
+                                        <a
+                                            href="whatsapp://send?text=https%3A%2F%2Ftimcutting.co.uk+-+Tim+Cutting+is+a+frontend+web+developer+in+Colchester%2C+UK.+JavaScript%2C+React%2C+UI%2FUX%2C+WordPress"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className={`share-${showShare ? 'in' : 'out'}`}
+                                            aria-label="Share on Whatsapp"
+                                        >
+                                            <i className={`icon-whatsapp share-${showShare ? 'in' : 'out'} text-primary size-2 cursor-pointer`}></i>
+                                        </a>
+                                    </div>
+                                    <i
+                                        className="icon-share px-3 my-2 m-lg-0 pl-lg-4 text-mid size-2 cursor-pointer flex-grow-0"
+                                        onClick={() => setShowShare(!showShare)}
+                                    ></i>
+                                    <span className='icon-font size-2 pr-2 pl-3 my-2 m-lg-0 text-mid' id="theme-label">F</span>
+                                </div>
+                                
                             </Col>
                             <Col className='text-left flex-grow-0 mr-2'>
                                 <Form.Group controlId="theme-switch" className="m-0">

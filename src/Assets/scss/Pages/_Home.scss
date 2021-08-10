@@ -48,3 +48,49 @@ ul {
 		stroke-dashoffset: 0;
 	}
 }
+
+.hero {
+    background-image:
+    linear-gradient(
+        transparent 0%,
+        $white 90%
+    ),
+    linear-gradient(
+        80deg, 
+        transparent 10%,
+        rgba(0, 0, 0, 0.03) 15%,
+        transparent 15%, 
+        transparent 100%
+    ),
+    linear-gradient(
+        40deg, 
+        transparent 0%, 
+        transparent 85%,
+        rgba(0, 0, 0, 0.03) 85%, 
+        transparent 90%
+    )
+}
+
+.dark-mode {
+    .hero {
+        background-image:
+        linear-gradient(
+            transparent 0%,
+            darken($darker, 5%) 90%
+        ),
+        linear-gradient(
+            80deg, 
+            transparent 10%,
+            rgba(0, 0, 0, 0.1) 15%,
+            transparent 15%, 
+            transparent 100%
+        ),
+        linear-gradient(
+            40deg, 
+            transparent 0%, 
+            transparent 85%,
+            rgba(0, 0, 0, 0.1) 85%, 
+            transparent 90%
+        )
+    }
+}

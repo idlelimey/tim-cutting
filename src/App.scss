@@ -8,9 +8,13 @@
 
 @import "./Assets/scss/partials/typography";
 @import './Assets/scss/partials/icons';
+@import './Assets/scss/partials/forms';
+@import './Assets/scss/partials/common';
+
 @import "./Assets/scss/components/BlockQuote";
 @import './Assets/scss/components/BrandLogos';
 @import './Assets/scss/components/Contrast';
+@import './Assets/scss/components/Accordion';
 @import './Assets/scss/partials/dark-mode';
 
 @import './Assets/scss/components/Header';
@@ -60,4 +64,24 @@ code {
     background-color: lighten($lighter, 5%);
     border-radius: $border-radius;
     padding: .25rem .5rem;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 1px solid $dark;
+  -webkit-text-fill-color: $white;
+  -webkit-box-shadow: 0 0 0px 1000px $darker inset;
+  transition: background-color 5000s ease-in-out 0s;
 }

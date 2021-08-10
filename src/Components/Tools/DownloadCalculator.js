@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useContext } from 'react';
 import { Container, Row, Col, InputGroup, Form, FormControl, DropdownButton, Dropdown, OverlayTrigger, Popover } from 'react-bootstrap';
+import { Helmet } from 'react-helmet-async';
 import { ThemeContext } from '../../App';
 import ScrollToTop from '../Common/ScrollToTop';
 import ToolsNav from './ToolsNavigation';
@@ -97,13 +98,17 @@ function DownloadCalc() {
 
     return (
         <>
+            <Helmet>
+                <title>Download Calculator by Tim Cutting - Web Developer, Colchester.</title>
+                <meta name="description" content="Calculate download times with ease with this useful tool. Eyeing up that gargantuan new 4K shooter on Xbox? Will Photoshop update over your lunch break? Find out by entering the two key metrics using common formats." />
+            </Helmet>
             <ScrollToTop />
             <ToolsNav />
             <Container as="section">
                 <Row xs={1} lg={3}>
                     <Col>
                         <h2>File Size</h2>
-                        <label htmlFor="filesize">{`Enter the filesize in ${fileSizeType}`}</label>
+                        <label htmlFor="filesize">{`Enter the file size in ${fileSizeType}`}</label>
                         <InputGroup>
                             <FormControl
                                 type="number"
@@ -113,10 +118,10 @@ function DownloadCalc() {
                                 size="lg"
                             />
                             <DropdownButton
-                                as={InputGroup.Prepend}
+                                as={InputGroup.Append}
                                 title={fileSizeType}
                                 variant="outline-primary"
-                                className="rounded-right"
+                                id="ff-dd"
                             >
                                 {binary ? (
                                     <>
@@ -167,9 +172,10 @@ function DownloadCalc() {
                                 size="lg"
                             />
                             <DropdownButton
-                                as={InputGroup.Prepend}
+                                as={InputGroup.Append}
                                 title={bandwidthType}
                                 variant="outline-primary"
+                                id="bw-dd"
                             >
                                 <Dropdown.Item onClick={() => setBandwidthType('Kbps')}>Kbps</Dropdown.Item>
                                 <Dropdown.Item onClick={() => setBandwidthType('Mbps')}>Mbps</Dropdown.Item>
@@ -204,6 +210,12 @@ function DownloadCalc() {
                         )}
                     </Col>
                 </Row>
+            </Container>
+            <Container as="section">
+                <h1 className="mb-3">Download Calculator</h1>
+                <p>Calculate download times with ease with this useful tool.  Eyeing up that gargantuan new 4K shooter on Xbox?  Will Photoshop update over your lunch break?  Find out by entering the two key metrics using common formats.  You can send me feedback or feature requests using the <a href="#contact-form">contact form</a> below.</p>
+            </Container>
+            <Container as="section">
                 <Row>
                     <Col>
                         <small className="text-muted">Download time will be an estimate as there are <i>many</i> variables that can affect the result. Download speeds will depend on the fidelity of your connection and the quality of your hardware among other things.  Let&apos;s call it a reasonable guess.</small>
