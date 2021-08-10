@@ -110,7 +110,7 @@ function YourWeightIn() {
             <ScrollToTop />
             <ToolsNav />
             <Container as="section">
-                <Row>
+                <Row xs={1} lg={3}>
                     <Col>
                         <h2>Weight</h2>
                         <label htmlFor="bandwidth">{`Enter your weight in ${weightType}`}</label>
@@ -165,8 +165,8 @@ function YourWeightIn() {
                                 )}
                                 
                             </Col>
-                            <Col className="d-flex align-items-center">
-                                <DropdownButton variant="outline-mid" title={currency} as={InputGroup.Prepend}>
+                            <Col className="d-flex align-items-center justify-content-end">
+                                <DropdownButton variant="outline-primary py-2" title={currency} as={InputGroup.Prepend}>
                                     {Object.keys(currencyTable).map((item) => (
                                         <Dropdown.Item key={item} onClick={() => setCurrency(item)}>{currencyTable[item].name}</    Dropdown.Item>
                                     ))}
