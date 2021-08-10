@@ -44,7 +44,15 @@ function YourWeightIn() {
     const [weight, setWeight] = useState(0);
     const [weightData, setWeightData] = useState(weights(0, 'kg'));
     const [commodity, setCommodity] = useState('XAU');
-    const [commodityData, setCommodityData] = useState( JSON.parse( sessionStorage.getItem( 'commodityData' ) ) );
+    const [commodityData, setCommodityData] = useState({rates: {
+        'BTC': 0,
+        'ETH': 0,
+        'GBP': 0,
+        'XAG': 0,
+        'XAU': 0,
+        'XPD': 0,
+        'XPT': 0
+    }});
     const [prices, setPrices] = useState();
     const [currency, setCurrency] = useState('BTC');
 
@@ -79,7 +87,7 @@ function YourWeightIn() {
     }, [weight, weightType]);
 
     useEffect(() => {
-        //setPrices(commodityPrice(weightData.gr, commodity));
+        console.info('x', commodityData.rates);
         let ozType = 28.3495231;
         let output = {
             USD: 0,
