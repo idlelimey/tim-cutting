@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, Suspense } from 'react';
 import {
     BrowserRouter as Router,
     Switch,
@@ -12,12 +12,13 @@ import Home from './Pages/Home';
 import Header from './Components/Header';
 import NotFound from './Pages/404';
 import Footer from './Components/Footer';
-import Tools from './Pages/Tools';
-import DownloadCalc from './Components/Tools/DownloadCalculator';
-import PasswordEntropy from './Components/Tools/PasssordEntropy';
-import Contrast from './Components/Tools/Contrast';
-import Gradient from './Components/Tools/Gradient';
-import YourWeightIn from './Components/Tools/YourWeightIn';
+
+const Tools           = React.lazy(() => import('./Pages/Tools'));
+const DownloadCalc    = React.lazy(() => import('./Components/Tools/DownloadCalculator'));
+const PasswordEntropy = React.lazy(() => import('./Components/Tools/PasssordEntropy'));
+const Contrast        = React.lazy(() => import('./Components/Tools/Contrast'));
+const Gradient        = React.lazy(() => import('./Components/Tools/Gradient'));
+const YourWeightIn    = React.lazy(() => import('./Components/Tools/YourWeightIn'));
 
 export const ThemeContext = React.createContext();
 
@@ -39,18 +40,20 @@ function App() {
                     <Header setTheme={setTheme} theme={theme} />
                     <main>
                         <div className="content">
-                            <Switch>
-                                <Route path="/" exact component={Home} />
-                                <Route path="/cv" component={CV} />
-                                <Route path="/tools" exact component={Tools} />
-                                <Route path="/tools/download-calculator" exact component={DownloadCalc} />
-                                <Route path="/tools/contrast-ratio" exact component={Contrast} />
-                                <Route path="/tools/password-entropy" exact component={PasswordEntropy} />
-                                <Route path="/tools/css-gradient-generator" exact component={Gradient} />
-                                <Route path="/tools/your-weight-in" component={YourWeightIn} />
-                                <Route path="/404" component={NotFound} />
-                                <Redirect to="/404" />
-                            </Switch>
+                            <Suspense fallback={<div className="p-5">Loading...</div>}>
+                                <Switch>
+                                    <Route path="/" exact component={Home} />
+                                    <Route path="/cv" component={CV} />
+                                    <Route path="/tools" exact component={Tools} />
+                                    <Route path="/tools/download-calculator" exact component={DownloadCalc} />
+                                    <Route path="/tools/contrast-ratio" exact component={Contrast} />
+                                    <Route path="/tools/password-entropy" exact component={PasswordEntropy} />
+                                    <Route path="/tools/css-gradient-generator" exact component={Gradient} />
+                                    <Route path="/tools/your-weight-in" component={YourWeightIn} />
+                                    <Route path="/404" component={NotFound} />
+                                    <Redirect to="/404" />
+                                </Switch>                                
+                            </Suspense>
                         </div>
                         <Footer />
                     </main>
