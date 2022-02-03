@@ -32,7 +32,7 @@ function Header({theme, setTheme}) {
                         <NavLink className="nav-link ml-4 my-2 m-lg-0" activeClassName="active" to="/" exact>Home</NavLink>
                         <NavLink className="nav-link ml-4 my-2 m-lg-0" activeClassName="active" to="/cv">CV</NavLink>
                         <NavLink className="nav-link ml-4 my-2 m-lg-0" activeClassName="active" to="/tools">Tools</NavLink>
-                        
+                        <a href="#contact-form" className='nav-link ml-4 my-2 m-lg-0'>Contact</a>
                     </Nav>
                     <Nav>
                         <Row noGutters className='align-items-center'>
