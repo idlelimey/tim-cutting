@@ -12,12 +12,14 @@ function Home() {
         {
             icon: 'mail',
             label: 'Email me',
-            href: '#contact-form'
+            href: '#contact-form',
+            type: 'button'
         },
         {
             icon: 'document',
             label: 'Read CV',
-            href: '/cv'
+            href: '/cv',
+            type: 'link'
         }
     ];
     
