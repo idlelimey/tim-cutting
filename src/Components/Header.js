@@ -31,7 +31,6 @@ function Header({theme, setTheme}) {
                     <Nav className="mr-auto">
                         <NavLink
                             className={({isActive}) => 'nav-link ml-4 my-2 m-lg-0' + (isActive ? ' active' : '')}
-                            activeClassName="active"
                             to="/"
                             end
                         >
