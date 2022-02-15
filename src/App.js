@@ -1,9 +1,8 @@
 import React, { useEffect, useState, Suspense } from 'react';
 import {
     BrowserRouter as Router,
-    Switch,
     Route,
-    Redirect
+    Routes,
 } from 'react-router-dom';
 
 import './App.scss';
@@ -43,18 +42,17 @@ function App() {
                         <main>
                             <div className="content">
                                 <Suspense fallback={<div className="p-5">Loading...</div>}>
-                                    <Switch>
-                                        <Route path="/" exact component={Home} />
-                                        <Route path="/cv" component={CV} />
-                                        <Route path="/tools" exact component={Tools} />
-                                        <Route path="/tools/download-calculator" exact component={DownloadCalc} />
-                                        <Route path="/tools/contrast-ratio" exact component={Contrast} />
-                                        <Route path="/tools/password-entropy" exact component={PasswordEntropy} />
-                                        <Route path="/tools/css-gradient-generator" exact component={Gradient} />
-                                        <Route path="/tools/your-weight-in" component={YourWeightIn} />
-                                        <Route path="/404" component={NotFound} />
-                                        <Redirect to="/404" />
-                                    </Switch>                                
+                                    <Routes>
+                                        <Route exact path="/" element={<Home />} />
+                                        <Route exact path="/cv" element={<CV />} />
+                                        <Route exact path="/tools" element={<Tools />} />
+                                        <Route exact path="/tools/download-calculator" element={<DownloadCalc />} />
+                                        <Route exact path="/tools/contrast-ratio" element={<Contrast />} />
+                                        <Route exact path="/tools/password-entropy" element={<PasswordEntropy />} />
+                                        <Route exact path="/tools/css-gradient-generator" element={<Gradient />} />
+                                        <Route exact path="/tools/your-weight-in" element={<YourWeightIn />} />
+                                        <Route path="*" element={<NotFound />} />
+                                    </Routes>                                
                                 </Suspense>
                             </div>
                             <Footer />
