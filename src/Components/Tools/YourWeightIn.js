@@ -97,12 +97,10 @@ function YourWeightIn() {
         };
 
         if (commodity === 'XAU' || commodity === 'XAG') ozType = 31.1034768;
-
         output.USD = (1 / commodityData.rates[commodity]) / ozType,
         output.GBP = (commodityData.rates.GBP / commodityData.rates[commodity]) / ozType,
         output.BTC = (commodityData.rates.BTC / commodityData.rates[commodity]) / ozType,
         output.ETH = (commodityData.rates.ETH / commodityData.rates[commodity]) / ozType
-
         setPrices(output);
     }, [weightData, commodity, commodityData.rates]);
 
