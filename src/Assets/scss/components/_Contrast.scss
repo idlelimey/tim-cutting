@@ -14,21 +14,3 @@
         box-sizing: border-box;
     }
 }
-
-.dark-mode {
-    .contrast {
-        input[type="range"] {
-            &::-webkit-slider-thumb {
-                border: .125rem solid $darker;
-            }
-    
-            &::-webkit-slider-runnable-track {
-                background: lighten($darker, 5%);
-            }
-              
-            &:focus::-webkit-slider-runnable-track {
-                background: lighten($dark, 5%);
-            }
-        }  
-    }
-}

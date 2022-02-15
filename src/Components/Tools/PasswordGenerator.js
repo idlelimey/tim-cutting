@@ -49,7 +49,7 @@ function PasswordGenerator() {
             <Row>
                 <Col xs={12} lg={8}>
                     <h2 className="mb-3">Gerneate a Password</h2>
-                    <p>Ever see a password that looks like <code>Th1$i5b@D</code>? Impossible to remember, easy to type incorrectly and surprisingly simple for a machine to guess (hint, it&apos;s too short). Instead, we could use some words that we already know, perhaps throw in some patterns unique to us and substitute one or two letters for symbols. We could append some numbers that we can remember too. Suddenly we&apos;re rocking more secure passwords that we don&apos;t have to write on a post-it note stuck to the monitor. Beat the 1337 H4x0R, use better passwords.</p>
+                    <p>Ever see a password that looks like <code>Th1$i5b@D</code>? Impossible to remember, easy to mistype and surprisingly simple for a machine to guess (hint, it&apos;s too short). Instead, we could use some words that we already know, perhaps throw in some patterns unique to us and substitute one or two letters for symbols. We could append some numbers that we can remember too. Suddenly we&apos;re rocking more secure passwords that we don&apos;t have to write on a post-it note stuck to the monitor. Beat the 1337 H4x0R, use better passwords.</p>
                 </Col>
                 <Col xs={12} lg={4}>
                     <h2 className="mb-3">&nbsp;</h2>

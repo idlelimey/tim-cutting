@@ -69,7 +69,7 @@ function Home() {
                         content="Attractive and usable design combining the best UX/UI and design practices with browser compatibility."
                         list={[
                             'User Experience',
-                            'Web &amp; Packaging Design',
+                            'Web & Packaging Design',
                             'Branding'
                         ]}
                     />

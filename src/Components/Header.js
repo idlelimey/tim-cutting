@@ -29,9 +29,16 @@ function Header({theme, setTheme}) {
                 </Navbar.Toggle>
                 <Navbar.Collapse id="nav">
                     <Nav className="mr-auto">
-                        <NavLink className="nav-link ml-4 my-2 m-lg-0" activeClassName="active" to="/" exact>Home</NavLink>
-                        <NavLink className="nav-link ml-4 my-2 m-lg-0" activeClassName="active" to="/cv">CV</NavLink>
-                        <NavLink className="nav-link ml-4 my-2 m-lg-0" activeClassName="active" to="/tools">Tools</NavLink>
+                        <NavLink
+                            className={({isActive}) => 'nav-link ml-4 my-2 m-lg-0' + (isActive ? ' active' : '')}
+                            to="/"
+                            end
+                        >
+                            Home
+                        </NavLink>
+
+                        <NavLink className={({isActive}) => 'nav-link ml-4 my-2 m-lg-0' + (isActive ? ' active' : '')}to="/cv">CV</NavLink>
+                        <NavLink className={({isActive}) => 'nav-link ml-4 my-2 m-lg-0' + (isActive ? ' active' : '')} to="/tools">Tools</NavLink>
                         <a href="#contact-form" className='nav-link ml-4 my-2 m-lg-0'>Contact</a>
                     </Nav>
                     <Nav>

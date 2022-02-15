@@ -1,9 +1,9 @@
 .dark-mode {
-    background-color: darken($darker, 5%);
+    background-color: $darker;
     color: $lighter;
 
     .navbar {
-        background-color: rgba(darken($darker, 5%), .95);
+        background-color: rgba($darker, .9);
     }
 
     .navbar-nav {
@@ -22,11 +22,11 @@
     }
 
     hr {
-        border-top-color: $darker;
+        border-top-color: darken($darker, 3%);
     }
 
     .form-control {
-        background-color: $darker;
+        background-color: $dark;
         border: 0;
         color: $lighter;
     }
@@ -43,12 +43,12 @@
 
     .input-group-text {
         color: $white;
-        background-color: darken($darker, 8%);
+        background-color: darken($darker, 3%);
         border: 0;
     }
 
     .popover-header {
-        background-color: darken($darker, 8%);
+        background-color: darken($darker, 3%);
         border: 0;
 
         &::before {
@@ -75,17 +75,21 @@
     }
 
     > .arrow::before {
-        border-bottom-color: darken($darker, 8%);
+        border-bottom-color: darken($darker, 3%);
     }
 
     > .arrow::after {
-        border-bottom-color: darken($darker, 8%);
+        border-bottom-color: darken($darker, 3%);
     }
 
     code {
-        background-color: darken($darker, 8%);
+        background-color: darken($darker, 3%);
         color: $danger;
         padding: .25rem .5rem;
         border-radius: $border-radius;
+    }
+
+    .shadow {
+        box-shadow: 0 .5rem 1rem rgba($black, .35) !important;
     }
 }
