@@ -43,14 +43,14 @@ function App() {
                             <div className="content">
                                 <Suspense fallback={<div className="p-5">Loading...</div>}>
                                     <Routes>
-                                        <Route exact path="/" element={<Home />} />
-                                        <Route exact path="/cv" element={<CV />} />
-                                        <Route exact path="/tools" element={<Tools />} />
-                                        <Route exact path="/tools/download-calculator" element={<DownloadCalc />} />
-                                        <Route exact path="/tools/contrast-ratio" element={<Contrast />} />
-                                        <Route exact path="/tools/password-entropy" element={<PasswordEntropy />} />
-                                        <Route exact path="/tools/css-gradient-generator" element={<Gradient />} />
-                                        <Route exact path="/tools/your-weight-in" element={<YourWeightIn />} />
+                                        <Route path="/" element={<Home />} />
+                                        <Route path="/cv" element={<CV />} />
+                                        <Route path="/tools" element={<Tools />} />
+                                        <Route path="/tools/download-calculator" element={<DownloadCalc />} />
+                                        <Route path="/tools/contrast-ratio" element={<Contrast />} />
+                                        <Route path="/tools/password-entropy" element={<PasswordEntropy />} />
+                                        <Route path="/tools/css-gradient-generator" element={<Gradient />} />
+                                        <Route path="/tools/your-weight-in" element={<YourWeightIn />} />
                                         <Route path="*" element={<NotFound />} />
                                     </Routes>                                
                                 </Suspense>
