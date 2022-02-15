@@ -36,6 +36,7 @@ $input-bg:                      $white;
 
 $font-family-sans-serif:      "Segoe UI", "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 $headings-font-family:        "Oswald", "Segoe UI", "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+//$headings-font-weight:        100;
 $line-height-base:            2;
 $font-weight-normal:          300;
 
@@ -55,7 +56,7 @@ $btn-border-radius:           99px;
 $btn-border-radius-lg:        $btn-border-radius;
 $btn-border-radius-sm:        $btn-border-radius;
 $btn-font-weight:             bold;
-$btn-border-width:            .125rem;
+$btn-border-width:            .1875rem;
 $input-btn-line-height:       1;
 
 $custom-control-indicator-border-color: $mid;
