@@ -1,5 +1,5 @@
 $white:    #fff;
-$black:    #111;
+$black:    #000;
 
 $primary:       #e86559;
 $secondary:     #32B1B3;
@@ -9,8 +9,8 @@ $danger:        #d68989;
 $lighter:   #dfdfdf;
 $light:     #aaa;
 $mid:       #888;
-$dark:      #555;
-$darker:    #333;
+$dark:      #252a37;
+$darker:    #171923;
 
 $theme-colors: ();
 $theme-colors: map-merge(
@@ -39,10 +39,10 @@ $headings-font-family:        "Oswald", "Segoe UI", "Helvetica Neue", sans-serif
 $line-height-base:            2;
 $font-weight-normal:          300;
 
-$body-color:                  $darker;
+$body-color:                  $black;
 $heading-color:               $mid;
 $heading-color-dark-mode:     $lighter;
-$text-muted:                  lighten($body-color, 25%);
+$text-muted:                  lighten($body-color, 50%);
 
 $font-size-base:              1.2rem;
 
@@ -68,3 +68,5 @@ $navbar-dark-toggler-border-color:  transparent;
 
 $code-font-size:                    87.5%;
 $code-color:                        $dark;
+
+$box-shadow:                        0 .5rem 1rem rgba($black, .05) !default;

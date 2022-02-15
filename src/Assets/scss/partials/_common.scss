@@ -6,6 +6,7 @@
     background-color: lighten($lighter, 5%);
     font-weight: 600;
     line-height: 1.25;
+    font-size: 80%;
 }
 
 .colour-adjust {
@@ -24,7 +25,7 @@
 
 .dark-mode {
     .range-label {
-        background-color: darken($darker, 8%);
+        background-color: $dark;
         color: $light;
     }
 }

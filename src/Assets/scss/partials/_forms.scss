@@ -34,11 +34,11 @@ input[type="range"] {
 .dark-mode {
     input[type="range"] {
         &::-webkit-slider-thumb {
-            border: .125rem solid $darker;
+            border: .125rem solid $dark;
         }
 
         &::-webkit-slider-runnable-track {
-            background: lighten($darker, 5%);
+            background: $dark;
         }
           
         &:focus::-webkit-slider-runnable-track {
