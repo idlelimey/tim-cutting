@@ -23,12 +23,12 @@ function SingleJob(props) {
 
 SingleJob.defaultProps = {
     'order': 0,
-    'title': 'Job Secription',
+    'title': 'Job Description',
     'company': 'The Company',
     'period': '1979 - Present',
     'content': [
-        'I joined the company initially to focus on driving a new email marketing platform as a value add to existing clients as well as to assist in feature enhancement and maintenance of key clients such as the Sun and the Daily Mail.',
-        'Before long I took the front-end developer role for the Telegraph Fantasy Football game, which soon expanded in to Rugby, Cricket and Horse Racing Fantasy games.  I now work on a React rebuild of a Holidays application within the business.'
+        'Mollit incididunt magna nulla eiusmod non proident aliqua laboris enim ad elit excepteur Lorem. Sint do eu ipsum deserunt esse sint veniam voluptate minim. Tempor ea in sunt adipisicing ipsum incididunt fugiat proident elit magna do. Et ut in exercitation qui id quis id velit.', 
+        'Excepteur ex nisi esse elit nulla voluptate pariatur laborum. Culpa sunt consectetur velit quis. Cupidatat consectetur cillum eu culpa ipsum est et culpa.'
     ]
 }
 
