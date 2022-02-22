@@ -92,4 +92,10 @@
     .shadow {
         box-shadow: 0 .5rem 1rem rgba($black, .35) !important;
     }
+
+    .share-icons {
+        a {
+            background-color: $dark;
+        }
+    }
 }

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Col, Form, Row, Navbar, Nav } from 'react-bootstrap';
+import { Col, Row, Navbar, Nav } from 'react-bootstrap';
 import { NavLink, useLocation } from 'react-router-dom';
 
 function Header({theme, setTheme}) {
@@ -44,7 +44,7 @@ function Header({theme, setTheme}) {
                     <Nav>
                         <Row noGutters className='align-items-center'>
                             <Col className='text-right flex-grow-1'>
-                                <div className="d-flex">
+                                <div className="d-flex align-items-center">
                                     <div className={'share-icons ml-3 my-2 m-lg-0 flex-grow-1'}>
                                         <a
                                             href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Ftimcutting.co.uk%2F&title=Tim%20Cutting&source=https%3A%2F%2Fjonsuh.com%2F&summary=Tim+Cutting+is+a+frontend+web+developer+in+Colchester%2C+UK.+JavaScript%2C+React%2C+UI%2FUX%2C+WordPress"
@@ -87,20 +87,17 @@ function Header({theme, setTheme}) {
                                         className="icon-share px-3 my-2 m-lg-0 pl-lg-4 text-mid size-2 cursor-pointer flex-grow-0"
                                         onClick={() => setShowShare(!showShare)}
                                     ></i>
-                                    <span className='icon-font size-2 pr-2 pl-3 my-2 m-lg-0 text-mid' id="theme-label">F</span>
                                 </div>
                                 
                             </Col>
                             <Col className='text-left flex-grow-0 mr-2'>
-                                <Form.Group controlId="theme-switch" className="m-0">
-                                    <Form.Label className="sr-only">Theme</Form.Label>
-                                    <Form.Switch 
-                                        id='set-mode'
-                                        checked={theme === 'dark'}
-                                        onChange={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-                                        aria-labelledby="theme-label"
-                                    />
-                                </Form.Group>  
+
+                                <span
+                                    className="theme-toggle icon-font"
+                                    data-theme={theme}
+                                    onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+                                    tabIndex="0"
+                                ></span>
                             </Col>
                         </Row>
                     </Nav>

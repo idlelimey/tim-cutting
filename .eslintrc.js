@@ -23,6 +23,7 @@ module.exports = {
         'jest'
     ],
     rules: {
+        'no-nonoctal-decimal-escape': 'off',
         'indent': ['error', 4, { 'SwitchCase': 1 }],
         'no-console': ['error', {'allow':['error', 'warn', 'info']}],
         'no-multiple-empty-lines': ['warn', {'max': 1}],
@@ -32,5 +33,10 @@ module.exports = {
         'react-hooks/exhaustive-deps': 'warn',
         'react/prop-types': 0,
         'jest/no-export': 0
+    },
+    settings: {
+        react: {
+            version: 'detect'
+        }
     }
 }
