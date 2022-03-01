@@ -16,7 +16,8 @@
         {"icon": "wordpress", "text": "Wordpress"},
         {"icon": "react", "text": "React"},
         {"icon": "github", "text": "Git/GitHub"},
-        {"icon": "vscode", "text": "Visual Studio Code"}
+        {"icon": "vscode", "text": "Visual Studio Code"},
+        {"icon": "adobe-cc", "text": "Adobe Creative Cloud"}
     ],
     "jobs": [
         {
