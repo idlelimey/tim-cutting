@@ -108,7 +108,7 @@ function Home() {
                                     delay={{ show: 250, hide: 400 }}
                                     overlay={<Tooltip>{icon.text}</Tooltip>}
                                 >
-                                    <i className={`icon-${icon.icon} size-4 text-mid`}></i>
+                                    <i className={`icon-${icon.icon} size-4`}></i>
                                 </OverlayTrigger>
                             </Col>
                         )
