@@ -9,7 +9,7 @@ function ToolsNav() {
             <Container>
                 <Row>
                     <Col>
-                        <h1 className="m-0 h5"><NavLink to="/tools">Tools</NavLink> / {pathname.replace('/tools/','').replace(/-/g,' ')}</h1>
+                        <h1 className="m-0 h5"><NavLink to="/tools"><i className='icon-back'></i> Tools</NavLink> / {pathname.replace('/tools/','').replace(/-/g,' ')}</h1>
                     </Col>
                 </Row>
             </Container>
