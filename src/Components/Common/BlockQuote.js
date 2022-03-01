@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function BlockQuote({content, fluid, icon, buttons}) {
     return (
         <Container fluid={fluid}>
-            <blockquote className="blockquote d-flex">
+            <blockquote className="blockquote d-block d-md-flex">
                 <div>
                     <i className={`icon-${icon}`}></i>
                 </div>
@@ -20,6 +20,7 @@ function BlockQuote({content, fluid, icon, buttons}) {
                                     <Button
                                         key={i}
                                         variant="outline-primary"
+                                        size="lg"
                                         href={b.href}
                                         className="mr-3 mt-3"
                                     >
@@ -28,7 +29,7 @@ function BlockQuote({content, fluid, icon, buttons}) {
                                 );
                             case 'link':
                                 return (
-                                    <Link className='btn btn-outline-primary mr-3 mt-3' to={b.href} key={i}>
+                                    <Link className='btn btn-outline-primary btn-lg mr-3 mt-3' to={b.href} key={i}>
                                         <i className={`icon-${b.icon} size-2 font-weight-normal`}></i>{b.label && ` ${b.label}`}
                                     </Link>
                                 );
