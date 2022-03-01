@@ -29,6 +29,16 @@ function CV() {
                                 </Button><br />
                                 <Button href='/Tim-Cutting-CV-fe-2021.pdf' size='sm' variant="outline-primary" className='mt-3' title="Download CV">
                                     <i className='icon-pdf size-2 p-1 font-weight-normal'></i>
+                                </Button><br />
+                                <Button
+                                    size='sm'
+                                    variant="outline-primary" 
+                                    href="https://www.linkedin.com/in/idlelimey/"
+                                    className="mt-3"
+                                    target="_blank"
+                                    rel="noreferrer noopener"
+                                >
+                                    <i className="icon-linkedin size-2 p-1 font-weight-normal"></i>
                                 </Button>
                             </div>
                         
@@ -89,7 +99,7 @@ function CV() {
                                         delay={{ show: 250, hide: 400 }}
                                         overlay={<Tooltip>{icon.text}</Tooltip>}
                                     >
-                                        <i className={`icon-${icon.icon} size-3 text-mid`}></i>
+                                        <i className={`icon-${icon.icon} size-3`}></i>
                                     </OverlayTrigger>
                                 </Col>
                             )
