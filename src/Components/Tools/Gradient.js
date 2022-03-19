@@ -2,13 +2,13 @@ import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, FormGroup, FormLabel, FormControl, Accordion, Button } from 'react-bootstrap';
 import ScrollToTop from '../Common/ScrollToTop';
 import ToolsNav from './ToolsNavigation';
-import { DefaultGradient, newLayer, newColourStop } from '../../Data/Gradients';
+import { initialGradient, newLayer, newColourStop } from '../../Data/Gradients';
 import { Helmet } from 'react-helmet-async';
 
 function Gradient() {
     const [bgCSS, setBgCSS] = useState('');
     const [currentLayer, setCurrentLayer] = useState(1);
-    const [layers, setLayers] = useState(DefaultGradient);
+    const [layers, setLayers] = useState(initialGradient);
 
     useEffect(() => {
         let temp = '';
@@ -51,7 +51,7 @@ function Gradient() {
 
     const addLayer = () => {
         let newState = [...layers];
-        newState.push(newLayer);
+        newState.push({...newLayer});
         setLayers(newState);
     }
 
@@ -64,7 +64,7 @@ function Gradient() {
 
     const addColourStop = (index) => {
         let newState = [...layers];
-        newState[index].colours.push(newColourStop);
+        newState[index].colours.push({...newColourStop});
         setLayers(newState);
     }
 
