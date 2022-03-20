@@ -2,13 +2,13 @@ import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, FormGroup, FormLabel, FormControl, Accordion, Button } from 'react-bootstrap';
 import ScrollToTop from '../Common/ScrollToTop';
 import ToolsNav from './ToolsNavigation';
-import { initialGradient, newLayer, newColourStop } from '../../Data/Gradients';
+import { UnionFlag, newLayer, newColourStop } from '../../Data/Gradients';
 import { Helmet } from 'react-helmet-async';
 
 function Gradient() {
     const [bgCSS, setBgCSS] = useState('');
     const [currentLayer, setCurrentLayer] = useState(1);
-    const [layers, setLayers] = useState(initialGradient);
+    const [layers, setLayers] = useState(UnionFlag);
 
     useEffect(() => {
         let temp = '';
