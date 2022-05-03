@@ -121,7 +121,7 @@ function Gradient() {
                                                     as="div"
                                                     className={`${currentLayer === i+1 ? ' active ' : ' '}cursor-pointer`}
                                                     onClick={() => setCurrentLayer(i+1)}
-                                                ><p className="h3 m-0">Layer {i+1}</p>
+                                                ><p className="h5 m-0">Layer {i+1}</p>
                                                 </Accordion.Toggle>
                                             </div>
                                             <div className="flex-grow-0">
@@ -211,12 +211,12 @@ function Gradient() {
 
                                         <div className="d-flex align-items-center mb-5">
                                             <div className="flex-grow-1">
-                                                <h3 className="m-0">
+                                                <p className="h5 m-0">
                                                     <span
                                                         className="colour-circle"
                                                         style={{backgroundColor: `rgb(${c.r},${c.g},${c.b})`}}
                                                     ></span> Colour {i+1}
-                                                </h3>
+                                                </p>
                                             </div>
                                             <div className="flex-grow-0">
                                                 <button

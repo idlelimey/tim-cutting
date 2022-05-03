@@ -22,7 +22,7 @@
     }
 
     hr {
-        border-top-color: darken($darker, 3%);
+        border-top-color: $dark;
     }
 
     .form-control {
