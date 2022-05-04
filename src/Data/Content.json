@@ -22,7 +22,7 @@
     "jobs": [
         {
             "order": 3,
-            "title": "Webmaster, Design & Development",
+            "title": "Webmaster, Design and Development",
             "company": "Laptopshop IT Ltd.",
             "period": "2003 - 2009",
             "content": [
@@ -31,7 +31,7 @@
         },
         {
             "order": 2,
-            "title": "SEO, Design & Development",
+            "title": "SEO, Design and Development",
             "company": "High Position Ltd.",
             "period": "2009 - 2011",
             "content": [
@@ -40,7 +40,7 @@
         },
         {
             "order": 1,
-            "title": "Marketing, Design & Development",
+            "title": "Marketing, Design and Development",
             "company": "Sports Supplements Ltd.",
             "period": "2011 - 2016",
             "content": [
@@ -50,7 +50,7 @@
         },
         {
             "order": 0,
-            "title": "Frontend Developer",
+            "title": "Senior Frontend Developer",
             "company": "GFM, Unit 6",
             "period": "2017 - 2022",
             "content": [

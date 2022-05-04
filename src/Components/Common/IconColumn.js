@@ -11,7 +11,7 @@ function IconColumn(props) {
                 <i className={`icon-${props.icon} size-5 mr-3 text-${Theme === 'dark' ? 'dark' : 'lighter'}`} style={{lineHeight: '1'}}></i>
             </div>
             <div className="flex-grow-1">
-                <h1 className="mb-3">{props.heading}<br /><span className="text-muted">{props.subheading}</span></h1>
+                <h1 className="mb-3">{props.heading}<br /><small className="text-muted">{props.subheading}</small></h1>
                 <p className="lead">{props.content}</p>
                 <ul className="ticks">
                     {props.list.map((l,i) => 

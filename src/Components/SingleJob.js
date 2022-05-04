@@ -5,11 +5,10 @@ function SingleJob(props) {
     return (
         <>
             <div className='text-center'>
-                <h2>{props.title}</h2>
+                <h2 className='px-3'>{props.title}</h2>
                 <hr />
-                <p className='h4'>{props.company}</p>
-                <p className='h4'>{props.period}</p>
-                <hr /> 
+                <p className='h5 mb-0 text-mid'>{props.company}</p>
+                <p className='h4 mb-4'><span className='scribble'>{props.period}</span></p>
             </div>
 
             {props.content.map( (p,i) => {

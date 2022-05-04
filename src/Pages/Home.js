@@ -119,7 +119,7 @@ function Home() {
             <Container as="section">
                 <Row>
                     <Col>
-                        <h1 className="text-center">I&apos;ve worked with some great brands...</h1>
+                        <h1 className="text-center">I&apos;ve worked with some <span className='scribble'>great brands</span>...</h1>
                     </Col>
                 </Row>
                 <Row className="py-5">

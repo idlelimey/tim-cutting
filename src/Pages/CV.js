@@ -17,13 +17,13 @@ function CV() {
             <div className="pt-5 px-3 px-md-0">
                 <Container as="section">
                     <Row noGutters>
-                        <Col md={4} lg={3} xl={2} className='text-center text-md-left mb-5'>
+                        <Col md={5} lg={4} xl={3} className='text-center text-md-left mb-5'>
                             <h1>
                                 <i className='icon-tim size-10 text-primary'></i>
                             </h1>
                             <div className='pl-md-3'>
                                 <p className='h3'>Tim Cutting</p>
-                                <p className='h3'>3<small><sup>rd</sup></small> July, 1979</p>
+                                <p className='h4'>3<small><sup>rd</sup></small> July, 1979</p>
                                 <Button href='#contact-form' size='sm' variant="outline-primary" className='mt-3' title="Contact Tim">
                                     <i className='icon-mail size-2 p-1 font-weight-normal'></i>
                                 </Button><br />
@@ -43,7 +43,7 @@ function CV() {
                             </div>
                         
                         </Col>
-                        <Col md={8} lg={9} xl={10}>
+                        <Col md={7} lg={8} xl={9}>
                             <BlockQuote content={Content.blockquotes.top} />
                         </Col>
                     </Row>
