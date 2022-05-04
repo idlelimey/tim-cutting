@@ -47,39 +47,41 @@
         border: 0;
     }
 
-    .popover-header {
-        background-color: darken($darker, 3%);
-        border: 0;
-
-        &::before {
-            border-color: transparent !important;
-        }
-    }
-
     .dropdown-menu {
-        background-color: $darker;
+        background-color: $dark;
         color: $lighter !important;
 
         .dropdown-item {
             color: $lighter;
 
             &:hover {
-                background-color: darken($darker, 3%);
+                background-color: $darker;
             }
         }
     }
+    
+    &.popover {
+        border: 1px solid $black;
+    }
+    .popover-header {
+        background-color: darken($dark, 3%);
+        border: 0;
 
+        &::before {
+            border-color: transparent !important;
+        }
+    }
     .popover-body {
-        background-color: darken($darker, 3%);
+        background-color: $dark;
         color: $lighter !important;
     }
 
     > .arrow::before {
-        border-bottom-color: darken($darker, 3%);
+        border-bottom-color: darken($black, 3%);
     }
 
     > .arrow::after {
-        border-bottom-color: darken($darker, 3%);
+        border-bottom-color: darken($dark, 3%);
     }
 
     code {
