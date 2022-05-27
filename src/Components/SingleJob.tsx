@@ -1,17 +1,24 @@
 import React from 'react';
 
-function SingleJob(props) {
+type Props = {
+    title: string,
+    company: string,
+    period: string,
+    content: string[]
+}
+
+function SingleJob({title, company, period, content}: Props) {
 
     return (
         <>
             <div className='text-center'>
-                <h2 className='px-3'>{props.title}</h2>
+                <h2 className='px-3'>{title}</h2>
                 <hr />
-                <p className='h5 mb-0 text-mid'>{props.company}</p>
-                <p className='h4 mb-4'><span className='scribble'>{props.period}</span></p>
+                <p className='h5 mb-0 text-mid'>{company}</p>
+                <p className='h4 mb-4'><span className='scribble'>{period}</span></p>
             </div>
 
-            {props.content.map( (p,i) => {
+            {content.map( (p,i) => {
                 return (
                     <p key={i}>{p}</p>
                 )
