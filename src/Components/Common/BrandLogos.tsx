@@ -1,6 +1,10 @@
 import React from 'react';
 
-export const Sony = ({className}) => {
+type Props = {
+	className: string
+}
+
+export const Sony = ({className}: Props) => {
     return (
         <svg
             x="0px"
@@ -35,7 +39,7 @@ export const Sony = ({className}) => {
     );
 }
 
-export const TheSun = ({className}) => {
+export const TheSun = ({className}: Props) => {
     return (
         <svg
             x="0px"
@@ -81,7 +85,7 @@ export const TheSun = ({className}) => {
     );
 }
 
-export const Telegraph = ({className}) => {
+export const Telegraph = ({className}: Props) => {
     return (
         <svg
             x="0px"
@@ -141,7 +145,7 @@ export const Telegraph = ({className}) => {
     );
 }
 
-export const Sky = ({className}) => {
+export const Sky = ({className}: Props) => {
     return (
         <svg
             x="0px"
@@ -166,7 +170,7 @@ export const Sky = ({className}) => {
     );
 }
 
-export const BulkPowders = ({className}) => {
+export const BulkPowders = ({className}: Props) => {
     return (
         <svg
             x="0px"
@@ -224,7 +228,7 @@ export const BulkPowders = ({className}) => {
     );
 }
 
-export const TypeCreative = ({className}) => {
+export const TypeCreative = ({className}: Props) => {
     return (
         <svg
             x="0px"
@@ -282,7 +286,7 @@ export const TypeCreative = ({className}) => {
     );
 }
 
-export const Breakfree = ({className}) => {
+export const Breakfree = ({className}: Props) => {
     return (
         <svg
             x="0px"
