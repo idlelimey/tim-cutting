@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Button, Col, Container, Row, Form } from 'react-bootstrap';
 
 function PasswordGenerator() {

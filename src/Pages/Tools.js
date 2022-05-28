@@ -1,4 +1,3 @@
-import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Helmet } from 'react-helmet-async';
 import { NavLink } from 'react-router-dom';

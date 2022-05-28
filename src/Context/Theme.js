@@ -1,4 +1,4 @@
-import React, { useState, createContext } from 'react';
+import { useState, createContext } from 'react';
 
 !localStorage.getItem('Theme') && localStorage.setItem(
     'Theme', 

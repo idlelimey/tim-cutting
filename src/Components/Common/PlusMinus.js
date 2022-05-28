@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default function PlusMinus({theState, theSetter, icon, theLabel}){
     return (
         <button
