@@ -1,4 +1,3 @@
-import React from 'react';
 import { Container, Row, Col, Button, OverlayTrigger, Tooltip } from 'react-bootstrap';
 import { Helmet } from 'react-helmet-async';
 import BlockQuote from '../Components/Common/BlockQuote';
@@ -112,7 +111,12 @@ function CV() {
                         {Content.jobs.sort((a,b) => {return a.order - b.order;}).map((job, i) => {
                             return (
                                 <Col key={i} className='mb-5'>
-                                    <SingleJob title={job.title} company={job.company} period={job.period} content={job.content} />
+                                    <SingleJob
+                                        title={job.title}
+                                        company={job.company}
+                                        period={job.period}
+                                        content={job.content}
+                                    />
                                 </Col>
                             )
                         })}
