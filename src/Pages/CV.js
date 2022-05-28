@@ -36,6 +36,7 @@ function CV() {
                                     className="mt-3"
                                     target="_blank"
                                     rel="noreferrer noopener"
+                                    title="LinkedIn"
                                 >
                                     <i className="icon-linkedin size-2 p-1 font-weight-normal"></i>
                                 </Button>
