@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useContext } from 'react';
+import { useEffect, useState, useContext } from 'react';
 import { Container, Row, Col, InputGroup, Form, FormControl, DropdownButton, Dropdown, OverlayTrigger, Popover } from 'react-bootstrap';
 import { Helmet } from 'react-helmet-async';
 import { ThemeContext } from '../../App';

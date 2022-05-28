@@ -1,4 +1,3 @@
-import React from 'react';
 import { Col, Container, Row, OverlayTrigger, Tooltip } from 'react-bootstrap';
 import BlockQuote from '../Components/Common/BlockQuote';
 import Content from '../Data/Content.json';

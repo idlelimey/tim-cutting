@@ -23,16 +23,18 @@ module.exports = {
         'jest'
     ],
     rules: {
-        'no-nonoctal-decimal-escape': 'off',
         'indent': ['error', 4, { 'SwitchCase': 1 }],
+        'jest/no-export': 0,
         'no-console': ['error', {'allow':['error', 'warn', 'info']}],
         'no-multiple-empty-lines': ['warn', {'max': 1}],
+        'no-nonoctal-decimal-escape': 'off',
         'no-undef': 2,
         'quotes': ['error', 'single'],
-        'react-hooks/rules-of-hooks': 'error',
         'react-hooks/exhaustive-deps': 'warn',
+        'react-hooks/rules-of-hooks': 'error',
         'react/prop-types': 0,
-        'jest/no-export': 0
+        'react/jsx-uses-react': 'off',
+        'react/react-in-jsx-scope': 'off',
     },
     settings: {
         react: {

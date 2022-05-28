@@ -1,4 +1,4 @@
-import React, { useEffect, useState, Suspense } from 'react';
+import { lazy, createContext, useEffect, useState, Suspense } from 'react';
 import {
     BrowserRouter as Router,
     Route,
@@ -13,14 +13,14 @@ import NotFound from './Pages/404';
 import Footer from './Components/Footer';
 import { HelmetProvider } from 'react-helmet-async';
 
-const Tools           = React.lazy(() => import('./Pages/Tools'));
-const DownloadCalc    = React.lazy(() => import('./Components/Tools/DownloadCalculator'));
-const PasswordEntropy = React.lazy(() => import('./Components/Tools/PasssordEntropy'));
-const Contrast        = React.lazy(() => import('./Components/Tools/Contrast'));
-const Gradient        = React.lazy(() => import('./Components/Tools/Gradient'));
-const YourWeightIn    = React.lazy(() => import('./Components/Tools/YourWeightIn'));
+const Tools           = lazy(() => import('./Pages/Tools'));
+const DownloadCalc    = lazy(() => import('./Components/Tools/DownloadCalculator'));
+const PasswordEntropy = lazy(() => import('./Components/Tools/PasssordEntropy'));
+const Contrast        = lazy(() => import('./Components/Tools/Contrast'));
+const Gradient        = lazy(() => import('./Components/Tools/Gradient'));
+const YourWeightIn    = lazy(() => import('./Components/Tools/YourWeightIn'));
 
-export const ThemeContext = React.createContext();
+export const ThemeContext = createContext();
 
 function App() {
     !localStorage.getItem('Theme') && localStorage.setItem(
