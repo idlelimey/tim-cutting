@@ -1,10 +1,10 @@
 import { Col, Container, Row, OverlayTrigger, Tooltip } from 'react-bootstrap';
 import BlockQuote from '../Components/Common/BlockQuote';
-import Content from '../Data/Content.json';
 import {Sony, TheSun, Sky, Telegraph, TypeCreative, Breakfree, BulkPowders} from '../Components/Common/BrandLogos';
 import ScrollToTop from '../Components/Common/ScrollToTop';
 import IconColumn from '../Components/Common/IconColumn';
 import { Helmet } from 'react-helmet-async';
+import { blockquotes, icons } from '../Data/Content';
 
 function Home() {
     const heroButtons = [
@@ -41,7 +41,7 @@ function Home() {
                         <path strokeLinecap="round" d="M261.9,99.5c-48.1,5.9-29.7,89.4,16.7,67.7c20.3-9.5,20.1-56.9-22.8-57.1"/>
                     </svg>
                     <BlockQuote
-                        content={[Content.blockquotes.top[0]]}
+                        content={[blockquotes.top[0]]}
                         buttons={heroButtons}
                     />
                 </Container>
@@ -99,7 +99,7 @@ function Home() {
 
             <Container as="section">
                 <Row>
-                    {Content.icons.map((icon, i) => {
+                    {icons.map((icon, i) => {
                         return (
                             <Col key={i} xs={4} sm={3} lg="auto" className='text-center flex-grow-1'>
                                 <OverlayTrigger
@@ -118,7 +118,7 @@ function Home() {
             <Container as="section">
                 <Row>
                     <Col>
-                        <h1 className="text-center">I&apos;ve worked with some <span className='scribble'>great brands</span>...</h1>
+                        <h1 className="text-center">I&apos;ve worked with some <span className='scribble'>great brands</span> ...</h1>
                     </Col>
                 </Row>
                 <Row className="py-5">
