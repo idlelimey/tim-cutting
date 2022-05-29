@@ -12,6 +12,7 @@ import Header from './Components/Header';
 import NotFound from './Pages/404';
 import Footer from './Components/Footer';
 import { HelmetProvider } from 'react-helmet-async';
+import Loading from './Components/Loading';
 
 const Tools           = lazy(() => import('./Pages/Tools'));
 const DownloadCalc    = lazy(() => import('./Components/Tools/DownloadCalculator'));
@@ -19,6 +20,15 @@ const PasswordEntropy = lazy(() => import('./Components/Tools/PasssordEntropy'))
 const Contrast        = lazy(() => import('./Components/Tools/Contrast'));
 const Gradient        = lazy(() => import('./Components/Tools/Gradient'));
 const YourWeightIn    = lazy(() => import('./Components/Tools/YourWeightIn'));
+
+// Loading test - Development only, comment out when not used
+/*
+const Tools = lazy(() => {
+    return new Promise(resolve => {
+        setTimeout(() => resolve(import('./Pages/Tools')), 3000);
+    });
+});
+*/
 
 export const ThemeContext = createContext();
 
@@ -41,7 +51,7 @@ function App() {
                         <Header setTheme={setTheme} theme={theme} />
                         <main>
                             <div className="content">
-                                <Suspense fallback={<div className="p-5">Loading...</div>}>
+                                <Suspense fallback={<Loading />}>
                                     <Routes>
                                         <Route path="/" element={<Home />} />
                                         <Route path="/cv" element={<CV />} />
