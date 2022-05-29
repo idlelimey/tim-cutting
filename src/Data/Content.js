@@ -3,32 +3,32 @@ export const tools = [
         title: 'Contrast Ratio',
         icon: 'paint',
         to: 'contrast-ratio',
-        description: 'Aute ut ullamco sit nisi et.',
+        description: 'Ensure strong contrasts within your designs using this tool.',
     },
     {
         title: 'CSS Gradient Generator',
         icon: 'code',
         to: 'css-gradient-generator',
-        description: 'Nisi ipsum sit elit ipsum aliquip adipisicing cillum pariatur reprehenderit.',
+        description: 'Build a multi-layer CSS gradient easily with this generator. Modify the layers gradient angle and set colour stops, you can set the visibility of each layer to make it easier to see what is going on with individual layers.',
         size: 2,
     },
     {
         title: 'Download Calculator',
         icon: 'down-clock',
         to: 'download-calculator',
-        description: 'Aliqua mollit dolore sunt Lorem enim incididunt commodo sunt duis ullamco ad dolor laborum cupidatat.',
+        description: 'Useful download calculator using binary or decimal formats.',
     },
     {
         title: 'Password Entropy',
         icon: 'password',
         to: 'password-entropy',
-        description: 'Ut voluptate aliqua qui est anim est anim voluptate eu.',
+        description: 'Don\'t use bad passwords, use this tester and generator and use better passwords.',
     },
     {
         title: 'Your Weight In...',
         icon: 'weight',
         to: 'your-weight-in',
-        description: 'Consectetur ex minim id incididunt aliquip Lorem ullamco adipisicing consequat occaecat amet.',
+        description: 'What is your Bitcoin-Mass-Index? Find your mass value using a variety of commodities.',
     },
 ];
 
