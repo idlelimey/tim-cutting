@@ -1,0 +1,41 @@
+$gap: 1.5rem;
+$div: $gap / 1;
+.tool-cards {
+    gap: $gap;
+}
+.tool-card {
+    border: .25rem solid transparent;
+    padding: 2rem;
+    border-radius: 1rem;
+    flex-basis: calc(100% - #{$div});
+    transition: border 1s, color 1s;
+
+    @include media-breakpoint-up(md) {
+        flex-basis: calc(50% - #{$div});
+    }
+
+    @include media-breakpoint-up(lg) {
+        flex-basis: calc(33.333% - #{$div});
+
+        &.size-2 {
+            flex-basis: calc(66.666% - #{$div});
+        }
+    }
+
+    [class^="icon-"] {
+        line-height: 1;
+    }
+
+    &:hover {
+        border: .25rem solid rgba($link-hover-color, .125);
+        transition: border .25s, color .25s;
+    }
+}
+
+.dark-mode {
+    .tool-card{
+        &:hover {
+            border: .25rem solid rgba($link-hover-color, .25);
+        }
+    }
+}

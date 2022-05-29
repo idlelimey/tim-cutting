@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import BlockQuote from '../Components/Common/BlockQuote';
 import ScrollToTop from '../Components/Common/ScrollToTop';
 import SingleJob from '../Components/SingleJob';
-import Content from '../Data/Content.json';
+import { blockquotes, icons, jobs } from '../Data/Content';
 
 function CV() {
     return (
@@ -44,7 +44,7 @@ function CV() {
                         
                         </Col>
                         <Col md={7} lg={8} xl={9}>
-                            <BlockQuote content={Content.blockquotes.top} />
+                            <BlockQuote content={blockquotes.top} />
                         </Col>
                     </Row>
                 </Container>
@@ -91,7 +91,7 @@ function CV() {
                         </Col>
                     </Row>
                     <Row className='py-5 justify-content-between'>
-                        {Content.icons.map((icon, i) => {
+                        {icons.map((icon, i) => {
                             return (
                                 <Col key={i} xs={4} sm={3} md={'auto'} className='text-center'>
                                     <OverlayTrigger
@@ -109,7 +109,7 @@ function CV() {
 
                 <Container as="section">
                     <Row xs={1} md={2}>
-                        {Content.jobs.sort((a,b) => {return a.order - b.order;}).map((job, i) => {
+                        {jobs.sort((a,b) => {return a.order - b.order;}).map((job, i) => {
                             return (
                                 <Col key={i} className='mb-5'>
                                     <SingleJob
@@ -127,7 +127,7 @@ function CV() {
                 <Container as="section">
                     <Row>
                         <Col>
-                            <BlockQuote content={Content.blockquotes.bottom} />
+                            <BlockQuote content={blockquotes.bottom} />
                         </Col>
                     </Row>
                 </Container>
