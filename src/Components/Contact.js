@@ -50,40 +50,46 @@ function Contact() {
         <Form noValidate validated={validated} onSubmit={sendEmail} id='contact-form'>
             <Container as="section">
                 {!isSent ? (
-                    <Row xs={1} md={2}>
-                        <Col>
-                            <Form.Group controlId="from_name" className="position-relative">
-                                <Form.Label className="d-block">
-                                    Your name
-                                </Form.Label>
-                                <Form.Control type="text" name="from_name" placeholder="Your name..." size="lg" required />
-
-                                <Form.Control.Feedback type="invalid" className="position-absolute text-right" style={{top: '.5rem'}}>
-                                    Gonna need a name.
-                                </Form.Control.Feedback>
-                            </Form.Group>
-                            <Form.Group controlId="from_email" className="position-relative">
-                                <Form.Label>Email address</Form.Label>
-                                <Form.Control type="email" name="from_email" placeholder="Your email address..." size="lg" required />
-                                <Form.Control.Feedback type="invalid" className="position-absolute text-right" style={{top: '.5rem'}}>
-                                    Enter your email address.
-                                </Form.Control.Feedback>
-                            </Form.Group>
-                            <Form.Group controlId="from_phone">
-                                <Form.Label>Telephone</Form.Label>
-                                <Form.Control type="text" name="from_phone" placeholder="Your phone number..." size="lg" />
-                            </Form.Group>
-                        </Col>
-                        <Col>
-                            <Form.Group controlId="message" className='d-flex flex-column h-100 pb-3 position-relative'>
-                                <Form.Label>Message</Form.Label>
-                                <Form.Control as="textarea" rows={5} name="message" required minLength={12} className='flex-grow-1' />
-                                <Form.Control.Feedback type="invalid" className="position-absolute text-right" style={{top: '.5rem'}}>
-                                    Write a short message
-                                </Form.Control.Feedback>
-                            </Form.Group>
-                        </Col>
-                    </Row>
+                    <>
+                        <Row>
+                            <Col>
+                                <h2 className="text-center pb-3">Hey, <span className='scribble'>let&apos;s talk</span> !</h2>
+                            </Col>
+                        </Row>
+                        <Row xs={1} md={2}>
+                            <Col>
+                                <Form.Group controlId="from_name" className="position-relative">
+                                    <Form.Label className="d-block">
+                                        Your name
+                                    </Form.Label>
+                                    <Form.Control type="text" name="from_name" placeholder="Your name..." size="lg" required />
+                                    <Form.Control.Feedback type="invalid" className="position-absolute text-right" style={{top: '.5rem'}}>
+                                        Gonna need a name.
+                                    </Form.Control.Feedback>
+                                </Form.Group>
+                                <Form.Group controlId="from_email" className="position-relative">
+                                    <Form.Label>Email address</Form.Label>
+                                    <Form.Control type="email" name="from_email" placeholder="Your email address..." size="lg" required />
+                                    <Form.Control.Feedback type="invalid" className="position-absolute text-right" style={{top: '.5rem'}}>
+                                        Enter your email address.
+                                    </Form.Control.Feedback>
+                                </Form.Group>
+                                <Form.Group controlId="from_phone">
+                                    <Form.Label>Telephone</Form.Label>
+                                    <Form.Control type="text" name="from_phone" placeholder="Your phone number..." size="lg" />
+                                </Form.Group>
+                            </Col>
+                            <Col>
+                                <Form.Group controlId="message" className='d-flex flex-column h-100 pb-3 position-relative'>
+                                    <Form.Label>Message</Form.Label>
+                                    <Form.Control as="textarea" rows={5} name="message" required minLength={12} className='flex-grow-1' />
+                                    <Form.Control.Feedback type="invalid" className="position-absolute text-right" style={{top: '.5rem'}}>
+                                        Write a short message
+                                    </Form.Control.Feedback>
+                                </Form.Group>
+                            </Col>
+                        </Row>
+                    </>
                 ) : (
                     <Row>
                         <Col className="text-center">
