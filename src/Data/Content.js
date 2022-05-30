@@ -94,3 +94,50 @@ export const jobs = [
         ]
     }
 ];
+
+export const infoCards = [
+    {
+        'icon': 'code',
+        'heading': 'Frontend',
+        'subheading': 'Front and centre',
+        'content': 'Modern frontend web development using the latest technology to drive performance and scalability.',
+        'list': [
+            'JavaScript, React',
+            'Responsive',
+            'WordPress'
+        ],
+    },
+    {
+        'icon': 'paint',
+        'heading': 'Design',
+        'subheading': 'Modern, Useful',
+        'content': 'Attractive and usable design combining the best UX/UI and design practices with browser compatibility.',
+        'list': [
+            'User Experience',
+            'Web & Packaging Design',
+            'Branding'
+        ],
+    },
+    {
+        'icon': 'seo',
+        'heading': 'Search Optimised',
+        'subheading': 'Human readable',
+        'content': 'Delivering SEO compliant code with an emphasis on maintaining readability for your end users.',
+        'list': [
+            'AMP Development',
+            'Page Optimisation',
+            'JSON-LD Schema'
+        ],
+    },
+    {
+        'icon': 'no-bug',
+        'heading': 'Compatibility',
+        'subheading': 'Across Every Device',
+        'content': 'Browser &amp; device tested for compatibility.  Strict accessibility testing ensures  content is rendered the way you intended.',
+        'list': [
+            'Device testing',
+            'Full Browser Compatibility',
+            'WCAG Compliancy'
+        ],
+    },
+]

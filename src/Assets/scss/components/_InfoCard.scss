@@ -1,0 +1,14 @@
+.info-card {
+    @include media-breakpoint-down(sm) {
+        [class*="icon-"] {
+            &.size-5 {
+                font-size: 4rem;
+            }
+        }
+
+        h1 {
+            font-size: 2rem;
+            word-break: break-word;
+        }
+    }
+}

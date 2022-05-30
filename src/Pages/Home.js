@@ -2,9 +2,9 @@ import { Col, Container, Row, OverlayTrigger, Tooltip } from 'react-bootstrap';
 import BlockQuote from '../Components/Common/BlockQuote';
 import {Sony, TheSun, Sky, Telegraph, TypeCreative, Breakfree, BulkPowders} from '../Components/Common/BrandLogos';
 import ScrollToTop from '../Components/Common/ScrollToTop';
-import IconColumn from '../Components/Common/IconColumn';
+import InfoCard from '../Components/Common/InfoCard';
 import { Helmet } from 'react-helmet-async';
-import { blockquotes, icons } from '../Data/Content';
+import { blockquotes, icons, infoCards } from '../Data/Content';
 
 function Home() {
     const heroButtons = [
@@ -50,50 +50,18 @@ function Home() {
 
             <Container as="section">
                 <Row xs={1} lg={2}>
-                    <IconColumn
-                        icon="code"
-                        heading="Frontend"
-                        subheading="Front and centre"
-                        content="Modern frontend web development using the latest technology to drive performance and scalability."
-                        list={[
-                            'JavaScript, React',
-                            'Responsive',
-                            'WordPress'
-                        ]}
-                    />
-                    <IconColumn
-                        icon="paint"
-                        heading="Design"
-                        subheading="Modern, Useful"
-                        content="Attractive and usable design combining the best UX/UI and design practices with browser compatibility."
-                        list={[
-                            'User Experience',
-                            'Web & Packaging Design',
-                            'Branding'
-                        ]}
-                    />
-                    <IconColumn
-                        icon="seo"
-                        heading="Search Optimised"
-                        subheading="Human readable"
-                        content="Delivering SEO compliant code with an emphasis on maintaining readability for your end users."
-                        list={[
-                            'AMP Development',
-                            'Page Optimisation',
-                            'JSON-LD Schema'
-                        ]}
-                    />
-                    <IconColumn
-                        icon="no-bug"
-                        heading="Compatibility"
-                        subheading="Across Every Device"
-                        content="Browser &amp; device tested for compatibility.  Strict accessibility testing ensures  content is rendered the way you intended."
-                        list={[
-                            'Device testing',
-                            'Full Browser Compatibility',
-                            'WCAG Compliancy'
-                        ]}
-                    /> 
+                    {infoCards.map((c,i) => {
+                        return (
+                            <InfoCard
+                                key={i}
+                                icon={c.icon}
+                                heading={c.heading}
+                                subheading={c.subheading}
+                                content={c.content}
+                                list={c.list}
+                            />
+                        )
+                    })}
                 </Row>
             </Container>
 
