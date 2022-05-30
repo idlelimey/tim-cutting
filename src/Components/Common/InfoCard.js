@@ -2,11 +2,11 @@ import { useContext } from 'react';
 import { ThemeContext } from '../../App';
 import { Col } from 'react-bootstrap';
 
-function IconColumn(props) {
+function InfoCard(props) {
     const Theme = useContext(ThemeContext);
 
     return (
-        <Col className="mb-5 d-flex">
+        <Col className="mb-5 d-flex info-card">
             <div className="flex-grow-0">
                 <i className={`icon-${props.icon} size-5 mr-3 text-${Theme === 'dark' ? 'mid' : 'lighter'}`} style={{lineHeight: '1'}}></i>
             </div>
@@ -23,4 +23,4 @@ function IconColumn(props) {
     )
 }
 
-export default IconColumn;
+export default InfoCard;
