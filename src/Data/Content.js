@@ -133,7 +133,7 @@ export const infoCards = [
         'icon': 'no-bug',
         'heading': 'Compatibility',
         'subheading': 'Across Every Device',
-        'content': 'Browser &amp; device tested for compatibility.  Strict accessibility testing ensures  content is rendered the way you intended.',
+        'content': 'Browser & device tested for compatibility.  Strict accessibility testing ensures  content is rendered the way you intended.',
         'list': [
             'Device testing',
             'Full Browser Compatibility',
