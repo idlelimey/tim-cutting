@@ -1,5 +1,9 @@
 .blockquote {
     color: $black;
+    p {
+        font-size: clamp(2rem, 2vw, 3rem);
+        line-height: 1.5;
+    }
 
     > div {
         > i {
@@ -10,40 +14,6 @@
                 margin-right: 1rem;
                 margin-top: -1rem;
             } 
-        }
-    }
-}
-
-@media (orientation: landscape) {
-    .blockquote {
-        p {
-            font-size: 3vw;
-
-            @include media-breakpoint-up(md) {
-                font-size: 2vw;
-            }
-
-            @include media-breakpoint-up(xl) {
-                font-size: 1.6vw;
-            }
-
-        }
-    }
-}
-
-@media (orientation: portrait) {
-    .blockquote {
-        p {
-            font-size: 3vh;
-
-            @include media-breakpoint-up(md) {
-                font-size: 2vh;
-            }
-
-            @include media-breakpoint-up(xl) {
-                font-size: 1.5vh;
-            }
-
         }
     }
 }

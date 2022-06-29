@@ -8,7 +8,7 @@ const ToolCard = ({to, size, icon, title, description}) => {
     return (
         <NavLink
             to={to}
-            className={`tool-card shadow${size ? ' size-' + size : ''}`}
+            className={`tool-card${size ? ' size-' + size : ''}`}
         >
             <i className={`icon-${icon} size-5 font-weight-normal`}></i>
             <p className="h3">{title}</p>

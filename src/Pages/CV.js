@@ -13,16 +13,19 @@ function CV() {
                 <meta name="description" content="Frontend Developer in Colchester with a strong background in commercial web development using standards-led JavaScript, SASS and PHP to produce high quality design and data driven user experiences. React, Wordpress, Bootstrap, etc." />
             </Helmet>
             <ScrollToTop />
-            <div className="pt-5 px-3 px-md-0">
+            <div className="pt-5 px-3 px-lg-0">
                 <Container as="section">
                     <Row noGutters>
-                        <Col md={5} lg={4} xl={3} className='text-center text-md-left mb-5'>
+                        <Col lg={4} xl={3} className='text-center text-lg-left mb-5'>
                             <h1>
                                 <i className='icon-tim size-10 text-primary'></i>
                             </h1>
                             <div className='pl-md-3'>
                                 <p className='h3'>Tim Cutting</p>
-                                <p className='h4'>3<small><sup>rd</sup></small> July, 1979</p>
+                                <p className='h4'>3<small><sup style={{
+                                    textTransform: 'lowercase',
+                                    fontWeight: 900
+                                }}>rd</sup></small> July, 1979</p>
                                 <Button href='#contact-form' size='sm' variant="outline-primary" className='mt-3' title="Contact Tim">
                                     <i className='icon-mail size-2 p-1 font-weight-normal'></i>
                                 </Button><br />
@@ -43,7 +46,7 @@ function CV() {
                             </div>
                         
                         </Col>
-                        <Col md={7} lg={8} xl={9}>
+                        <Col lg={8} xl={9}>
                             <BlockQuote content={blockquotes.top} />
                         </Col>
                     </Row>

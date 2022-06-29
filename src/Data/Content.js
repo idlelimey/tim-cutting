@@ -43,12 +43,12 @@ export const blockquotes = {
 };
 
 export const icons = [
-    {'icon': 'html', 'text': 'HTML5'},
-    {'icon': 'sass', 'text': 'SASS/SCSS'},
     {'icon': 'javascript', 'text': 'JavaScript'},
-    {'icon': 'booststrap', 'text': 'Bootstrap'},
-    {'icon': 'wordpress', 'text': 'Wordpress'},
     {'icon': 'react', 'text': 'React'},
+    {'icon': 'wordpress', 'text': 'Wordpress'},
+    {'icon': 'sass', 'text': 'SASS/SCSS'},
+    {'icon': 'html', 'text': 'HTML5'},
+    {'icon': 'booststrap', 'text': 'Bootstrap'},
     {'icon': 'github', 'text': 'Git/GitHub'},
     {'icon': 'vscode', 'text': 'Visual Studio Code'},
     {'icon': 'adobe-cc', 'text': 'Adobe Creative Cloud'}

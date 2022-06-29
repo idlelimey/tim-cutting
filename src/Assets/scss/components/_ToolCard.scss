@@ -9,6 +9,7 @@ $div: $gap / 1;
     border-radius: 1rem;
     flex-basis: calc(100% - #{$div});
     transition: border 1s, color 1s;
+    box-shadow: .25rem .25rem .75rem rgba($black, .075), -.25rem -.25rem .75rem rgba($light, .075) !important;
 
     @include media-breakpoint-up(md) {
         flex-basis: calc(50% - #{$div});
@@ -34,6 +35,8 @@ $div: $gap / 1;
 
 .dark-mode {
     .tool-card{
+        box-shadow: .25rem .25rem .5rem rgba($black, .25), -.25rem -.25rem .5rem rgba(lighten($darker, 66.66%), .04) !important;
+
         &:hover {
             border: .25rem solid rgba($link-hover-color, .25);
         }

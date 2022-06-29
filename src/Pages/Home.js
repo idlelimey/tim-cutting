@@ -45,9 +45,7 @@ function Home() {
                         buttons={heroButtons}
                     />
                 </Container>
-                
             </div>
-
             <Container as="section">
                 <Row xs={1} lg={2}>
                     {infoCards.map((c,i) => {
