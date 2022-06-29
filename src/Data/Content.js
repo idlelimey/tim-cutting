@@ -61,7 +61,7 @@ export const jobs = [
         'company': 'Laptopshop IT Ltd.',
         'period': '2003 - 2009',
         'content': [
-            'My role as a Web master took me from maintaining thousands of products for busy online Laptop retailer to providing full web master role for a constantly developing site.  As well as the technical role of both front and back-end development I was solely responsible for all design assignments - banners, email campaigns and product presentation.'
+            'My role as a Web master took me from maintaining thousands of products for a busy online Laptop retailer to providing a full web master role for a constantly developing bespoke site (PHP, MySQL, JS).  As well as the technical role of both front and back-end development I was solely responsible for all design assignments - banners, email campaigns and product presentation.'
         ]
     },
     {
