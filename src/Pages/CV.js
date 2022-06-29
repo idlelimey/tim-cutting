@@ -22,7 +22,10 @@ function CV() {
                             </h1>
                             <div className='pl-md-3'>
                                 <p className='h3'>Tim Cutting</p>
-                                <p className='h4'>3<small><sup>rd</sup></small> July, 1979</p>
+                                <p className='h4'>3<small><sup style={{
+                                    textTransform: 'lowercase',
+                                    fontWeight: 900
+                                }}>rd</sup></small> July, 1979</p>
                                 <Button href='#contact-form' size='sm' variant="outline-primary" className='mt-3' title="Contact Tim">
                                     <i className='icon-mail size-2 p-1 font-weight-normal'></i>
                                 </Button><br />
