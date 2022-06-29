@@ -157,18 +157,18 @@ function YourWeightIn() {
                         <h2>Result</h2>
                         <label htmlFor="bandwidth">&nbsp;</label>
                         <Row>
-                            <Col>
+                            <Col xs={{span: true}}>
                                 {weight === 0 ? (
-                                    <p className="h1 text-dark text-capitalize">£-.--</p>
+                                    <p className="h2 text-dark text-capitalize">£-.--</p>
                                         
                                 ) : (
-                                    <p className="h1 text-primary text-capitalize">
+                                    <p className="h2 text-primary text-capitalize">
                                         {`${currencyTable[currency].symbol}${(+(prices[currency] * weightData.gr).toFixed(2)).  toLocaleString('en', {minimumFractionDigits: 2})}`}
                                     </p>
                                 )}
                                 
                             </Col>
-                            <Col className="d-flex align-items-center justify-content-end">
+                            <Col xs={'auto'}>
                                 <DropdownButton variant="outline-primary py-2" title={currency} as={InputGroup.Prepend}>
                                     {Object.keys(currencyTable).map((item) => (
                                         <Dropdown.Item key={item} onClick={() => setCurrency(item)}>{currencyTable[item].name}</    Dropdown.Item>
