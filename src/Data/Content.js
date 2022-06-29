@@ -89,8 +89,8 @@ export const jobs = [
         'company': 'GFM, Unit 6',
         'period': '2017 - 2022',
         'content': [
-            'I initially joined the company to drive a new email marketing platform as a value-add for existing clients, and to assist in feature enhancement and maintenance for key clients such as the Sun and the Daily Mail.',
-            'Before long I was asked to be the front-end developer for the Telegraph Fantasy Football game, which soon expanded into Rugby, Cricket and Horse Racing Fantasy games. I am currently leading the development on a React rebuild of a Holidays application within the business.'
+            'I joined the company initially to focus on driving a new email marketing platform as a value add for clients as well as to assist in maintenance of key clients such as the Sun and the Daily Mail.',
+            'Before long I took the frontend developer role for the Telegraph Fantasy Football games, which further expanded in to versions for Rugby, Cricket & Horse Racing.  I then became the lead Developer for the frontend team to work on a React rebuild of a Holidays application within the business.'
         ]
     }
 ];
