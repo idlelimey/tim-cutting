@@ -26,7 +26,7 @@ function CV() {
                                 <Button href='#contact-form' size='sm' variant="outline-primary" className='mt-3' title="Contact Tim">
                                     <i className='icon-mail size-2 p-1 font-weight-normal'></i>
                                 </Button><br />
-                                <Button href='/Tim-Cutting-CV-fe-2021.pdf' size='sm' variant="outline-primary" className='mt-3' title="Download CV">
+                                <Button href='/Tim-Cutting-CV-fe-2022.pdf' size='sm' variant="outline-primary" className='mt-3' title="Download CV">
                                     <i className='icon-pdf size-2 p-1 font-weight-normal'></i>
                                 </Button><br />
                                 <Button

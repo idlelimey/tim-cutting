@@ -1,3 +1,14 @@
+::selection {
+    color: $white;
+    background: $dark;
+}
+.dark-mode {
+    ::selection {
+        color: $dark;
+        background: $lighter;
+    }
+}
+
 .range-label {
     width: 3.5rem;
     padding: .25rem 0;
@@ -56,5 +67,17 @@
       background-size: auto 100%;
       background-repeat: round;
       background-position: 0em;
+    }
+}
+
+// Link overwrites
+a:not(.nav-link):not(.tool-card):not(.btn) {
+    font-weight: 900;
+}
+
+// Button overwrites
+.btn {
+    &:hover {
+        color: $dark;
     }
 }
