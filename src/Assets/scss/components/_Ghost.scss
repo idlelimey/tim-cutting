@@ -1,0 +1,33 @@
+#ghost {
+    height: 500px;
+    aspect-ratio: 1;
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    transform-origin: center;
+    border-radius: 100%;
+    background-image: linear-gradient(to left, rgba($primary, 0.75), transparent 95%);
+    animation: rotate 5s infinite linear;
+}
+
+#blur {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    backdrop-filter: blur(200px);
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0);
+    }
+    50% {
+        aspect-ratio: 1 / 1.5;
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
