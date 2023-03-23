@@ -1,18 +1,41 @@
-h1,h2,h3,h4,h5,h6,
-.h1,.h2,.h3,.h4,.h5,.h6 {
-    text-transform: uppercase;
-    font-weight: 900;
-    letter-spacing: -.05rem;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: $headings-font-family;
+    //text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: -0.05rem;
     word-break: break-word;
 }
 
 @include media-breakpoint-down(sm) {
-    h1, .h1 { font-size: $font-size-base * 1.5; }
-    h2, .h2 { font-size: $font-size-base * 1.5; }
-    h3, .h3 { font-size: $font-size-base * 1.5; }
-    h4, .h4 { font-size: $font-size-base * 1.25; }
+    h1,
+    .h1 {
+        font-size: $font-size-base * 1.5;
+    }
+    h2,
+    .h2 {
+        font-size: $font-size-base * 1.5;
+    }
+    h3,
+    .h3 {
+        font-size: $font-size-base * 1.5;
+    }
+    h4,
+    .h4 {
+        font-size: $font-size-base * 1.25;
+    }
 
     .lead {
-        font-size: 1.25rem;;
+        font-size: 1.25rem;
     }
 }
