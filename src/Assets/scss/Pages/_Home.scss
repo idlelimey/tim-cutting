@@ -9,7 +9,7 @@ ul {
                 content: 'J';
                 font-size: 133%;
                 color: $primary;
-                margin-right: .75rem;
+                margin-right: 0.75rem;
             }
         }
     }
@@ -17,7 +17,7 @@ ul {
 
 // Hello
 #hello {
-    max-width: 22vh;
+    max-width: 33vh;
     width: 100%;
     height: auto;
     fill: none;
@@ -28,8 +28,8 @@ ul {
     path {
         stroke-dasharray: 333;
         stroke-dashoffset: 333;
-        
-        @for $i from 1 through 7 {	
+
+        @for $i from 1 through 7 {
             &:nth-of-type(#{$i}) {
                 animation: draw 666ms #{$i * 333}ms forwards;
             }
@@ -44,53 +44,7 @@ ul {
     66% {
         stroke-dashoffset: 50;
     }
-	100% {
-		stroke-dashoffset: 0;
-	}
-}
-
-.hero {
-    background-image:
-    linear-gradient(
-        transparent 0%,
-        $white 90%
-    ),
-    linear-gradient(
-        80deg, 
-        transparent 10%,
-        rgba(0, 0, 0, 0.03) 15%,
-        transparent 15%, 
-        transparent 100%
-    ),
-    linear-gradient(
-        40deg, 
-        transparent 0%, 
-        transparent 85%,
-        rgba(0, 0, 0, 0.03) 85%, 
-        transparent 90%
-    )
-}
-
-.dark-mode {
-    .hero {
-        background-image:
-        linear-gradient(
-            transparent 0%,
-            darken($darker, 0) 90%
-        ),
-        linear-gradient(
-            80deg, 
-            transparent 10%,
-            rgba(0, 0, 0, 0.1) 15%,
-            transparent 15%, 
-            transparent 100%
-        ),
-        linear-gradient(
-            40deg, 
-            transparent 0%, 
-            transparent 85%,
-            rgba(0, 0, 0, 0.1) 85%, 
-            transparent 90%
-        )
+    100% {
+        stroke-dashoffset: 0;
     }
 }
