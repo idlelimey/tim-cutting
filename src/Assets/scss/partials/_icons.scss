@@ -6,7 +6,7 @@
     font-display: swap;
 }
 
-[class*="icon-"] {
+[class*='icon-'] {
     text-transform: none;
     text-emphasis: none;
     font-family: 'Tim Icons';
@@ -42,53 +42,53 @@
     }
 
     &.pully-n1 {
-        transform: translateY(-.25rem);
+        transform: translateY(-0.25rem);
     }
 }
 
 $icons: (
-    add             : '\002b',
-    adobe-cc        : '\0038',
-    attention       : '\004b',
-    back            : '\0062',
-    booststrap      : '\0030',
-    code            : '\002f',
-    delete          : '\0064',
-    document        : '\0048',
-    double-dash     : '\004f',
-    down-clock      : '\004c',
-    facebook        : '\0066',
-    gift            : '\0041',
-    github          : '\0031',
-    github-circle   : '\0067',
-    hide            : '\0029',
-    html            : '\0032',
-    info            : '\0049',
-    javascript      : '\0037',
-    linkedin        : '\0069',
-    mail            : '\0042',
-    minus           : '\002d',
-    moon            : '\0046',
-    no-bug          : '\0051',
-    paint           : '\004d',
-    password        : '\004e',
-    pdf             : '\0047',
-    phone           : '\0043',
-    quote           : '\0044',
-    react           : '\0033',
-    sass            : '\0034',
-    seo             : '\0050',
-    share           : '\0053',
-    show            : '\0028',
-    shuffle         : '\0025',
-    sun             : '\0045',
-    tick-circle     : '\004a',
-    tim             : '\0054',
-    twitter         : '\0074',
-    vscode          : '\0035',
-    weight          : '\0057',
-    whatsapp        : '\0077',
-    wordpress       : '\0036'
+    add: '\002b',
+    adobe-cc: '\0038',
+    attention: '\004b',
+    back: '\0062',
+    booststrap: '\0030',
+    code: '\002f',
+    delete: '\0064',
+    document: '\0048',
+    double-dash: '\004f',
+    down-clock: '\004c',
+    facebook: '\0066',
+    gift: '\0041',
+    github: '\0031',
+    github-circle: '\0067',
+    hide: '\0029',
+    html: '\0032',
+    info: '\0049',
+    javascript: '\0037',
+    linkedin: '\0069',
+    mail: '\0042',
+    minus: '\002d',
+    moon: '\0046',
+    no-bug: '\0051',
+    paint: '\004d',
+    password: '\004e',
+    pdf: '\0047',
+    phone: '\0043',
+    quote: '\0044',
+    react: '\0033',
+    sass: '\0034',
+    seo: '\0050',
+    share: '\0053',
+    show: '\0028',
+    shuffle: '\0025',
+    sun: '\0045',
+    tick-circle: '\004a',
+    tim: '\0054',
+    twitter: '\0074',
+    vscode: '\0035',
+    weight: '\0057',
+    whatsapp: '\0077',
+    wordpress: '\0036',
 );
 
 @each $name, $char in $icons {
@@ -98,6 +98,6 @@ $icons: (
 }
 
 .brand-logo {
-    height: 1.5rem;
+    height: 2rem;
     margin: 1rem 0;
 }
