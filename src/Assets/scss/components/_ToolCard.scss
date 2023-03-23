@@ -1,15 +1,16 @@
 $gap: 1.5rem;
-$div: $gap / 1;
+$div: calc($gap / 1);
 .tool-cards {
     gap: $gap;
 }
 .tool-card {
-    border: .25rem solid transparent;
+    border: 0.25rem solid transparent;
     padding: 2rem;
     border-radius: 1rem;
     flex-basis: calc(100% - #{$div});
     transition: border 1s, color 1s;
-    box-shadow: .25rem .25rem .75rem rgba($black, .075), -.25rem -.25rem .75rem rgba($light, .075) !important;
+    box-shadow: 0.25rem 0.25rem 0.75rem rgba($black, 0.075), -0.25rem -0.25rem 0.75rem rgba($light, 0.075) !important;
+    background-color: rgba($white, 0.666);
 
     @include media-breakpoint-up(md) {
         flex-basis: calc(50% - #{$div});
@@ -23,22 +24,24 @@ $div: $gap / 1;
         }
     }
 
-    [class^="icon-"] {
+    [class^='icon-'] {
         line-height: 1;
     }
 
     &:hover {
-        border: .25rem solid rgba($link-hover-color, .125);
-        transition: border .25s, color .25s;
+        border: 0.25rem solid rgba($link-hover-color, 0.125);
+        transition: border 0.25s, color 0.25s;
     }
 }
 
 .dark-mode {
-    .tool-card{
-        box-shadow: .25rem .25rem .5rem rgba($black, .25), -.25rem -.25rem .5rem rgba(lighten($darker, 66.66%), .04) !important;
+    .tool-card {
+        box-shadow: 0.25rem 0.25rem 0.5rem rgba($black, 0.25),
+            -0.25rem -0.25rem 0.5rem rgba(lighten($darker, 66.66%), 0.04) !important;
+        background-color: rgba($darker, 0.5);
 
         &:hover {
-            border: .25rem solid rgba($link-hover-color, .25);
+            border: 0.25rem solid rgba($link-hover-color, 0.25);
         }
     }
 }

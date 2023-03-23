@@ -1,79 +1,81 @@
-$white:    #fff;
-$black:    #000;
+$white: #fff;
+$black: #000;
 
-$primary:       #e86559;
-$secondary:     #32B1B3;
-$success:       #20B361;
-$danger:        #d68989;
+$primary: #e86559;
+$secondary: #32b1b3;
+$success: #20b361;
+$danger: #d68989;
 
-$lighter:   #dfdfdf;
-$light:     #aaa;
-$mid:       #888;
-$dark:      #252a37;
-$darker:    #171923;
+$lighter: #dfdfdf;
+$light: #aaa;
+$mid: #888;
+$dark: #252a37;
+$darker: #171923;
 
 $theme-colors: ();
 $theme-colors: map-merge(
-  (
-    "primary":      $primary,
-    "secondary":    $secondary,
-    "success":      $success,
-    "danger":       $danger,
-    "light":        $light,
-    "lighter":      $lighter,
-    "mid":          $mid,
-    "dark":         $dark,
-    "darker":       $darker,
-  ),
-  $theme-colors
+    (
+        'primary': $primary,
+        'secondary': $secondary,
+        'success': $success,
+        'danger': $danger,
+        'light': $light,
+        'lighter': $lighter,
+        'mid': $mid,
+        'dark': $dark,
+        'darker': $darker,
+    ),
+    $theme-colors
 );
 
-$form-feedback-valid-color:     $success;
-$form-feedback-invalid-color:   $danger;
-$input-bg:                      $white;
+$form-feedback-valid-color: $success;
+$form-feedback-invalid-color: $danger;
+$input-bg: $white;
 
-$link-hover-decoration:       none;
+$link-hover-decoration: none;
 
-$font-family-sans-serif:      "Segoe UI", "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-$headings-font-family:        "Segoe UI", "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-sans-serif: 'Mona Sans', 'Segoe UI', 'Helvetica Neue', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji';
+$headings-font-family: 'Mona Sans', 'Segoe UI', 'Helvetica Neue', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji';
 //$headings-font-weight:        100;
-$line-height-base:            2;
-$font-weight-normal:          300;
+$line-height-base: 1.5;
+$font-weight-normal: 300;
 
-$body-color:                  $black;
-$heading-color:               $mid;
-$heading-color-dark-mode:     $lighter;
-$text-muted:                  lighten($body-color, 50%);
+$body-color: $black;
+$heading-color: $mid;
+$heading-color-dark-mode: $lighter;
+$text-muted: lighten($body-color, 50%);
 
-$font-size-base:              1.2rem;
+$font-size-base: 1.2rem;
 
-$h1-font-size:                $font-size-base * 2.08;
-$h2-font-size:                $font-size-base * 1.8;
+$h1-font-size: $font-size-base * 2.08;
+$h2-font-size: $font-size-base * 1.8;
 //$h3-font-size:                $font-size-base * 2;
 //$h4-font-size:                $font-size-base * 1.5;
 
-$blockquote-font-size:        $font-size-base * 2.25;
+$blockquote-font-size: $font-size-base * 2.25;
 
-$hr-border-color:             $lighter;
-$hr-margin-y:                 $font-size-base * 1.75;
+$hr-border-color: $lighter;
+$hr-margin-y: $font-size-base * 1.75;
 
-$input-btn-padding-x-lg:      2rem;
-$btn-border-radius:           99px;
-$btn-border-radius-lg:        $btn-border-radius;
-$btn-border-radius-sm:        $btn-border-radius;
-$btn-font-weight:             bold;
-$btn-border-width:            .1875rem;
-$input-btn-line-height:       1;
+$input-btn-padding-x-lg: 2rem;
+$btn-border-radius: 99px;
+$btn-border-radius-lg: $btn-border-radius;
+$btn-border-radius-sm: $btn-border-radius;
+$btn-font-weight: bold;
+$btn-border-width: 0.1875rem;
+$input-btn-line-height: 1;
 
 $custom-control-indicator-border-color: $mid;
 
-$navbar-light-color:                $dark;
-$navbar-light-active-color:         $darker;
-$navbar-light-hover-color:          $black;
+$navbar-light-color: $dark;
+$navbar-light-active-color: $darker;
+$navbar-light-hover-color: $black;
 $navbar-light-toggler-border-color: transparent;
-$navbar-dark-toggler-border-color:  transparent;
+$navbar-dark-toggler-border-color: transparent;
 
-$code-font-size:                    87.5%;
-$code-color:                        $dark;
+$code-font-size: 87.5%;
+$code-color: $dark;
 
-$box-shadow:                        0 .5rem 1rem rgba($black, .075) !default;
+$box-shadow: 0 0.5rem 1rem rgba($black, 0.075) !default;
