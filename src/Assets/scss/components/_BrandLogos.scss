@@ -1,3 +1,9 @@
 .brand-logo {
     fill: $mid;
 }
+
+.dark-mode {
+    .brand-logo {
+        fill: $light;
+    }
+}
