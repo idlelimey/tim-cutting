@@ -3,7 +3,7 @@
     color: $lighter;
 
     .navbar {
-        background-color: rgba($darker, .9);
+        background-color: rgba($darker, 0.9);
     }
 
     .navbar-nav {
@@ -26,8 +26,8 @@
     }
 
     .form-control {
-        background-color: $dark;
-        border: 0;
+        background-color: rgba($dark, 0.666);
+        border-color: darken($darker, 3%);
         color: $lighter;
     }
 
@@ -59,7 +59,7 @@
             }
         }
     }
-    
+
     &.popover {
         border: 1px solid $black;
     }
@@ -87,12 +87,12 @@
     code {
         background-color: darken($darker, 3%);
         color: $danger;
-        padding: .25rem .5rem;
+        padding: 0.25rem 0.5rem;
         border-radius: $border-radius;
     }
 
     .shadow {
-        box-shadow: 0 .5rem 1rem rgba($black, .4) !important;
+        box-shadow: 0 0.5rem 1rem rgba($black, 0.4) !important;
     }
 
     .share-icons {
