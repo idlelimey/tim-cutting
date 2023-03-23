@@ -78,7 +78,7 @@ a:not(.nav-link):not(.tool-card):not(.btn) {
 // Button overwrites
 .btn {
     &:hover {
-        color: $dark;
+        color: $white;
         box-shadow: 0 0 0 0.375rem rgba($primary, 0.25);
     }
 }
