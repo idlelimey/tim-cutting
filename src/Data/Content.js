@@ -1,3 +1,5 @@
+import { Breakfree, BulkPowders, Sky, Sony, Telegraph, TheSun, TypeCreative } from '../Components/Common/BrandLogos';
+
 export const tools = [
     {
         title: 'Contrast Ratio',
@@ -44,15 +46,46 @@ export const blockquotes = {
 };
 
 export const icons = [
-    { icon: 'javascript', text: 'JavaScript' },
-    { icon: 'react', text: 'React' },
-    { icon: 'wordpress', text: 'Wordpress' },
-    { icon: 'sass', text: 'SASS/SCSS' },
-    { icon: 'html', text: 'HTML5' },
-    { icon: 'booststrap', text: 'Bootstrap' },
-    { icon: 'github', text: 'Git/GitHub' },
-    { icon: 'vscode', text: 'Visual Studio Code' },
-    { icon: 'adobe-cc', text: 'Adobe Creative Cloud' },
+    { icon: 'javascript', text: 'JavaScript', aosDelay: 800 },
+    { icon: 'react', text: 'React', aosDelay: 600 },
+    { icon: 'wordpress', text: 'Wordpress', aosDelay: 400 },
+    { icon: 'sass', text: 'SASS/SCSS', aosDelay: 200 },
+    { icon: 'html', text: 'HTML5', aosDelay: 0 },
+    { icon: 'booststrap', text: 'Bootstrap', aosDelay: 100 },
+    { icon: 'github', text: 'Git/GitHub', aosDelay: 300 },
+    { icon: 'vscode', text: 'Visual Studio Code', aosDelay: 500 },
+    { icon: 'adobe-cc', text: 'Adobe Creative Cloud', aosDelay: 700 },
+];
+
+export const logos = [
+    {
+        logo: <Breakfree />,
+        aosDelay: 900,
+    },
+    {
+        logo: <BulkPowders />,
+        aosDelay: 600,
+    },
+    {
+        logo: <Sky />,
+        aosDelay: 300,
+    },
+    {
+        logo: <Sony />,
+        aosDelay: 0,
+    },
+    {
+        logo: <Telegraph />,
+        aosDelay: 150,
+    },
+    {
+        logo: <TheSun />,
+        aosDelay: 450,
+    },
+    {
+        logo: <TypeCreative />,
+        aosDelay: 750,
+    },
 ];
 
 export const jobs = [
