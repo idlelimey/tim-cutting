@@ -37,6 +37,40 @@ function Home() {
                     name='description'
                     content='Web Developer in Colchester with a number of essential and valuable digital skills from many years in development, design and marketing. Frontend React, Wordpress, etc.'
                 />
+                <script type='application/ld+json'>
+                    {`{
+                        "@context": "https://schema.org/",
+                        "@type": "Person",
+                        "name": "Tim Cutting",
+                        "givenName": "Tim",
+                        "familyName": "Cutting",
+                        "birthDate": "1979",
+                        "url": "https://timcutting.co.uk",
+                        "image": "https://timcutting.co.uk/logo512.png",
+                        "jobTitle": {
+                            "@type": "DefinedTerm",
+                            "inDefinedTermSet": "https://targetjobs.co.uk/careers-advice/job-descriptions",
+                            "termCode": "456249-web-developer-job-description",
+                            "name": "Web Developer",
+                            "url": "https://targetjobs.co.uk/careers-advice/job-descriptions/456249-web-developer-job-description"
+                        },
+                        "worksFor": {
+                            "@type": "Organization",
+                            "name": "Tim Cutting"
+                        },
+                        "address": {
+                            "@type": "PostalAddress",
+                            "addressLocality": "Colchester",
+                            "addressRegion": "Essex",
+                            "addressCountry": "GB"
+                        },
+                        "sameAs": [
+                            "https://github.com/idlelimey",
+                            "https://www.linkedin.com/in/idlelimey",
+                            "https://twitter.com/idlelimey"
+                        ]
+                    }`}
+                </script>
             </Helmet>
             <ScrollToTop />
             <div
