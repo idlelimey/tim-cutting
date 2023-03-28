@@ -10,7 +10,7 @@
     "bootstrap": "^4.6.1",
     "emailjs-com": "^2.6.4",
     "eslint": "^7.5.0",
-    "react": "^18.1.0",
+    "react": "^18.2.0",
     "react-bootstrap": "^1.6.4",
     "react-dom": "^18.1.0",
     "react-helmet-async": "^1.0.9",
